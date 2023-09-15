@@ -1,0 +1,50 @@
+#icons {
+    position: fixed;
+    left: 20px;
+    top: 45%;
+    z-index: 80;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+        display: block;
+
+        &:hover {
+            i {
+
+                color: blue !important;
+            }
+        }
+
+        i {
+            font-size: 25px;
+            transition: all 0.5s;
+
+            &.fa-facebook {
+                color: #3b5998;
+            }
+
+            &.fa-youtube {
+                color: #FF0000;
+            }
+
+            &.fa-instagram {
+                color: #f09433;
+            }
+
+            &.fa-linkedin {
+                color: #0A66C2;
+            }
+
+            &.fa-square-x-twitter {
+                color: #657786;
+            }
+        }
+    }
+}

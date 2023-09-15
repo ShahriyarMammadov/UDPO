@@ -4,6 +4,7 @@ header {
     left: 0;
     right: 0;
     transition: all 0.5s;
+    z-index: 40;
 
     &.resize {
         margin-top: -100px;
@@ -14,6 +15,7 @@ header {
     }
 
     #header {
+        background-color: white;
 
         .headerTop {
             padding: 10px;

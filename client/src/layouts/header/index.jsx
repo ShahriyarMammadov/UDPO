@@ -11,7 +11,7 @@ const Header = () => {
   const [visible, setVisible] = useState(true);
 
   // HEADERTOP VISIBLE
-  const threshold = 10;
+  const threshold = 100;
   const scrollThreshold = 400;
 
   useEffect(() => {
