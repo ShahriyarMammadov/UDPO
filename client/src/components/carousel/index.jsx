@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const CarouselComponent = () => {
   const onChange = (currentSlide) => {
-    console.log(currentSlide);
+    // console.log(currentSlide);
   };
 
   return (

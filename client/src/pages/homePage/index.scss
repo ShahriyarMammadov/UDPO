@@ -1,3 +1,38 @@
 main {
     margin-top: 155px;
+    background-color: #f7f8f9;
+
+    #section2 {
+        .servicesCards {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            a {
+                text-decoration: none;
+
+                &.card {
+                    background-color: #183D3D;
+                    width: 24%;
+                    height: 180px;
+                    padding: 40px 30px;
+                    color: white;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+                    text-align: center;
+
+                    i {
+                        font-size: 40px;
+                        padding: 0 0 15px 0;
+                    }
+                }
+            }
+
+
+        }
+    }
 }

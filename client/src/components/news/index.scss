@@ -1,0 +1,44 @@
+#newsComponent {
+    padding: 40px 0;
+
+    .container {
+
+        .moreNewsBtn {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #183D3D;
+            font-weight: 700;
+            width: fit-content;
+            transition: all 0.5s;
+
+            i {
+                transition: all 0.5s;
+            }
+
+            &:hover {
+                color: red;
+
+                i {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .newsCards {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+
+            a {
+                background-color: red;
+                width: calc((100% / 4) - 15px);
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
