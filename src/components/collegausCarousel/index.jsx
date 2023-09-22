@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./index.scss";
 import genclerveidmannaziri from "../../assets/images/collegaus/genclerveidmannazirliyi.jpg";
 import ecosoc from "../../assets/images/collegaus/ecosoc.jpg";
