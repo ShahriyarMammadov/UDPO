@@ -9,7 +9,7 @@ import "./index.scss";
 // import sosialmudafienazirliyi from "../../assets/images/collegaus/sosialmudafienazirliyi.png";
 // import undesa from "../../assets/images/collegaus/undesa.jpg";
 // import undp from "../../assets/images/collegaus/undp.png";
-// import AliceCarousel from "react-alice-carousel";
+import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Image } from "antd";
 
