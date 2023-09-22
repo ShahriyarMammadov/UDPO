@@ -14,6 +14,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -22,6 +23,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -30,6 +32,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -38,6 +41,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -46,6 +50,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -54,6 +59,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -62,6 +68,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -70,6 +77,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -78,6 +86,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -86,6 +95,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -94,6 +104,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
           <Link to={"/xeber"} className="newsCard">
@@ -102,6 +113,7 @@ const NewsComponent = () => {
                 src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
                 alt="News"
               />
+              <p>Bu gunlerde</p>
             </div>
           </Link>
         </div>

@@ -3,6 +3,7 @@ import "./index.scss";
 import CarouselComponent from "../../components/carousel";
 import NewsComponent from "../../components/news";
 import ColleaguesComponent from "../../components/collegausCarousel";
+import RequestComponent from "../../components/request-sorgu";
 
 const HomePage = () => {
   return (
@@ -41,6 +42,10 @@ const HomePage = () => {
 
       <section id="section4" className="colleagues">
         <ColleaguesComponent />
+      </section>
+
+      <section id="section5" className="request">
+        <RequestComponent />
       </section>
     </main>
   );

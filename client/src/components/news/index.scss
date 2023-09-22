@@ -32,10 +32,20 @@
             flex-wrap: wrap;
 
             a {
-                background-color: red;
                 width: calc((100% / 4) - 15px);
+                position: relative;
 
                 img {
+                    width: 100%;
+                }
+
+                p {
+                    position: absolute;
+                    color: white;
+                    font-weight: 500;
+                    bottom: 0;
+                    padding: 10px 15px;
+                    background: linear-gradient(90deg, rgba(232, 232, 242, 0) 0%, rgba(173, 173, 208, 0.7932422969187676) 15%, rgba(1, 2, 3, 0.9024859943977591) 100%);
                     width: 100%;
                 }
             }
