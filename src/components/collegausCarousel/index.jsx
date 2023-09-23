@@ -6,7 +6,7 @@ import insanhuquqlari from "../../assets/images/collegaus/insanhuquqlari.jpg";
 import medeniyyetveturizmnazirliyi from "../../assets/images/collegaus/medeniyyetveturizmnazirliyi.png";
 import ombudsman from "../../assets/images/collegaus/ombudsman.png";
 import sehersalma from "../../assets/images/collegaus/sehersalma.jpg";
-import sosialmudafienazirliyi from "../../assets/images/collegaus/sosialmudafienazirliyi.png";
+// import sosialmudafienazirliyi from "../../assets/images/collegaus/sosialmudafienazirliyi.png";
 import undesa from "../../assets/images/collegaus/undesa.jpg";
 import undp from "../../assets/images/collegaus/undp.png";
 import AliceCarousel from "react-alice-carousel";
@@ -43,9 +43,9 @@ const ColleaguesComponent = () => {
     <div className="item" data-value="6">
       <Image src={sehersalma} alt="sehersalma" />
     </div>,
-    <div className="item" data-value="7">
-      <Image src={sosialmudafienazirliyi} alt="sosialmudafienazirliyi" />
-    </div>,
+    // <div className="item" data-value="7">
+    //   <Image src={sosialmudafienazirliyi} alt="sosialmudafienazirliyi" />
+    // </div>,
     <div className="item" data-value="8">
       <Image src={undesa} alt="undesa" />
     </div>,
