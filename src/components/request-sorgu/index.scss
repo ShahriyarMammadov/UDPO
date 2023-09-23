@@ -1,0 +1,36 @@
+#request {
+    padding: 20px 10px;
+
+    .request {
+        form {
+            div {
+                font-size: 18px;
+                padding: 10px 0;
+            }
+
+            .submitBtn {
+                border: 2px solid blue;
+                border-radius: 10px;
+                box-shadow: blue 4px 4px 0 0;
+                color: #422800;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                padding: 0 18px;
+                line-height: 40px;
+                font-weight: 700;
+                margin: 20px 0;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #fff;
+                }
+
+                &:active {
+                    box-shadow: #422800 2px 2px 0 0;
+                    transform: translate(2px, 2px);
+                }
+            }
+        }
+    }
+}

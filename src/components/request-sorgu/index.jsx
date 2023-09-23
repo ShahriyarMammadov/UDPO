@@ -1,8 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.scss";
+import axios from "axios";
 
 const RequestComponent = () => {
-  return <div>SORĞU</div>;
+  const [radioValue, setRadioValue] = useState("");
+
+  const sendRequest = async () => {
+    try {
+      const { data } = await axios.post(`asdasdsdnfkjsa`, {
+        radioValue,
+      });
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  console.log(radioValue);
+
+  return (
+    <div id="request">
+      <div className="container request">
+        <h1>SORĞU</h1>
+        <h4>
+          Mövzu: ƏLİLLİYİ OLAN İNSANLARIN CƏMİYYƏTƏ İNTEQRASİYASINA NƏ MANE OLUR
+        </h4>
+
+        <hr />
+        <form
+          action=""
+          onChange={(e) => {
+            setRadioValue(e.target.value);
+          }}
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
+          <div>
+            <input
+              type="radio"
+              id="one"
+              name="drone"
+              value="Qanunların zəif icra olunması"
+            />
+            <label for="one">Qanunların zəif icra olunması</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="two"
+              name="drone"
+              value="İnfrastrukturun uyğun olmaması"
+            />
+            <label for="two">İnfrastrukturun uyğun olmaması</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="four"
+              name="drone"
+              value="Əlilliyi olan insanların hüquqlarını bilməməsi "
+            />
+            <label for="four">
+              Əlilliyi olan insanların hüquqlarını bilməməsi{" "}
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="five"
+              name="drone"
+              value="İctimai nəzarətin zəif olması"
+            />
+            <label for="five">İctimai nəzarətin zəif olması</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="six"
+              name="drone"
+              value="Laqeydlilik və məsuliyyətsizlik"
+            />
+            <label for="six">Laqeydlilik və məsuliyyətsizlik</label>
+          </div>
+          <button class="submitBtn" onClick={sendRequest}>
+            Təqdim Et
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default RequestComponent;
