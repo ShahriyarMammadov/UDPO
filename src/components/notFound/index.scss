@@ -1,0 +1,30 @@
+#notFoundPage {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 100px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    button {
+        padding: 10px 15px;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover{
+            background-color: blue;
+            color: white;
+        }
+    }
+}

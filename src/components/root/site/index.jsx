@@ -3,6 +3,7 @@ import Header from "../../../layouts/header";
 import Footer from "../../../layouts/footer";
 import { Outlet } from "react-router-dom";
 import SocialIcons from "../../socialIcons";
+import ScrollToTop from "../../scrolltotop";
 
 const MainRoot = () => {
   return (
@@ -10,6 +11,7 @@ const MainRoot = () => {
       <Header />
       <Outlet />
       <SocialIcons />
+      <ScrollToTop />
       <Footer />
     </>
   );

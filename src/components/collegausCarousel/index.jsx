@@ -58,7 +58,18 @@ const ColleaguesComponent = () => {
     <div id="colleaguesComponent">
       <div className="container carousel">
         <h1>ƏMƏKDAŞLARIMIZ</h1>
-        <AliceCarousel mouseTracking items={items} responsive={responsive} />
+        <AliceCarousel
+          mouseTracking
+          autoPlay
+          autoPlayControls
+          autoPlayStrategy="none"
+          autoPlayInterval={1000}
+          animationDuration={1000}
+          animationType="fadeout"
+          infinite
+          items={items}
+          responsive={responsive}
+        />
       </div>
     </div>
   );
