@@ -13,33 +13,44 @@ const UnvanliSosialYardim = () => {
           }}
         />
 
-        <div className="text">
-          <p>
+        <div className="text" style={{ color: "#0089d0" }}>
+          <p style={{ fontWeight: "700" }}>
             Sosial yardımın alınması üçün müraciət edilməsi, onun təyin
             olunması, verilməsi və verilməsindən imtina edilməsi QAYDALARI
           </p>
-          <p className="right">
+          <p
+            className="right"
+            style={{
+              textAlign: "right",
+            }}
+          >
             Azərbaycan Respublikası Nazirlər Kabinetinin 2006-cı il 02 fevral
             tarixli 32 nömrəli Qərarı ilə təsdiq edilmişdir
           </p>
-          <p>
+          <p style={{ textAlign: "center", fontWeight: "700" }}>
             Azərbaycan Respublikası Nazirlər Kabinetinin 2007-ci il 01 mart
             tarixli 45 nömrəli, 2007-ci il 23 aprel tarixli 70 nömrəli, və
             2008-ci il 15 iyul tarixli 158 nömrəli Qərarları ilə edilmiş
-            əlavələr və dəyişikliklərlə{" "}
+            əlavələr və dəyişikliklərlə Sosial yardımın alınması üçün müraciət
+            edilməsi, onun təyin olunması, verilməsi və verilməsindən imtina
+            edilməsi <span>QAYDALARI</span>
           </p>
           <p>
-            Sosial yardımın alınması üçün müraciət edilməsi, onun təyin
-            olunması, verilməsi və verilməsindən imtina edilməsi
-            <span>QAYDALARI</span>
-          </p>
-          <p>
-            <span>1.Ümumi müddəalar</span> 1.1.Bu Qaydalar “Ünvanlı dövlət
-            sosial yardımı haqqında” Azərbaycan Respublikası Qanununun tətbiq
-            edilməsi barədə Azərbaycan Respublikası Prezidentinin 2005-ci il 16
-            noyabr tarixli 312 nömrəli Fərmanına əsasən sosial yardımın alınması
-            üçün müraciət edilməsi, onun təyin olunması, verilməsi və
-            verilməsindən imtina edilməsini tənzimləyir. <br />
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              1.Ümumi müddəalar
+            </span>{" "}
+            1.1.Bu Qaydalar “Ünvanlı dövlət sosial yardımı haqqında” Azərbaycan
+            Respublikası Qanununun tətbiq edilməsi barədə Azərbaycan
+            Respublikası Prezidentinin 2005-ci il 16 noyabr tarixli 312 nömrəli
+            Fərmanına əsasən sosial yardımın alınması üçün müraciət edilməsi,
+            onun təyin olunması, verilməsi və verilməsindən imtina edilməsini
+            tənzimləyir. <br />
             <br />
             1.2.Azərbaycan Respublikasının ərazisində yaşayan və müraciətdən
             əvvəlki son 1 il ərzində orta aylıq gəliri onlardan asılı olmayan
@@ -53,8 +64,17 @@ const UnvanliSosialYardim = () => {
             ailə üzvü üçün ehtiyac meyarının məcmusu arasında yaranan fərq
             məbləğində sosial yardım almaq hüququna malikdirlər.
           </p>
+
           <p>
-            <span>2. Sosial yardımın alınması üçün müraciət edilməsi</span>
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              2. Sosial yardımın alınması üçün müraciət edilməsi
+            </span>
             2.1. Sosial yardımın alınması üçün ailəni təmsil edən şəxs yaşayış
             yeri üzrə rayon (şəhər) Əhalinin Sosial Müdafiəsi Mərkəzinə xüsusi
             ərizə forması (1 nömrəli əlavə), “Ailənin gəlir və əmlakı haqqında
@@ -134,7 +154,13 @@ const UnvanliSosialYardim = () => {
           </p>
 
           <p>
-            <span>
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
               3. Sosial yardımın təyin olunması, verilməsi və verilməsindən
               imtina edilməsi
             </span>
@@ -261,9 +287,15 @@ const UnvanliSosialYardim = () => {
           </p>
 
           <p>
-            <span>4. Sosial yardımın ödənilməsi</span>
-            <br />
-            <br />
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
+              4. Sosial yardımın ödənilməsi
+            </span>
             4.1. Sosial yardım ayda bir dəfə aztəminatlı ailənin yaşayış yeri
             üzrə ödəniş müəssisələri (bank və ya rabitə şöbəsi) vasitəsilə
             ödənilir.
@@ -318,23 +350,31 @@ const UnvanliSosialYardim = () => {
           </p>
 
           <p>
-            <span>
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
               5. Sosial yardımın təyin edilməsinə və verilməsinə nəzarət
             </span>
-            <br />
-            <br />
             Sosial yardımın təyin edilməsinə və verilməsinə nəzarət Azərbaycan
             Respublikasının Əmək və Əhalinin Sosial Müdafiəsi Nazirliyi
             tərəfindən həyata keçirilir.
           </p>
 
           <p>
-            <span>
+            <span
+              style={{
+                display: "block",
+                paddingBottom: "10px",
+                fontWeight: "700",
+              }}
+            >
               Ünvanlı sosial yardım üçün ilkin müraciət zamanı tələb oluna
               biləcək SƏNƏDLƏR
             </span>
-            <br />
-            <br />
             Ailəni təmsil edən şəxs ailə üzvləri tərəfindən ailənin yetkinlik
             yaşına çatmış və fəaliyyət qabiliyyəti olan üzvləri arasından
             könüllü seçilir. Bu barədə ailə üzvlərinin müvafiq orqan (notariat

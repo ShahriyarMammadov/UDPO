@@ -5,6 +5,7 @@ import HomePage from "../pages/homePage";
 import NewsPage from "../pages/newsPage";
 import BerpaVeMualiceMerkezleri from "../pages/xidmetlerPages/berpaMualiceMerkezleri";
 import Mualice from "../pages/xidmetlerPages/mualice";
+import ReabilitasiyaAvadanliqlari from "../pages/xidmetlerPages/reabilitasiyaAvadanliqlari";
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
 
 const ROUTES = [
@@ -31,6 +32,10 @@ const ROUTES = [
       {
         path: "xidmetler/unvanlisosialyardim",
         element: <UnvanliSosialYardim />,
+      },
+      {
+        path: "xidmetler/reabilitasiyaavadanliqlari",
+        element: <ReabilitasiyaAvadanliqlari />,
       },
       {
         path: "*",
