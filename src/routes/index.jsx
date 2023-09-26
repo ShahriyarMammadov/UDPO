@@ -5,7 +5,9 @@ import HomePage from "../pages/homePage";
 import NewsPage from "../pages/newsPage";
 import BerpaVeMualiceMerkezleri from "../pages/xidmetlerPages/berpaMualiceMerkezleri";
 import Mualice from "../pages/xidmetlerPages/mualice";
+import QaynarXettler from "../pages/xidmetlerPages/qaynarXettler";
 import ReabilitasiyaAvadanliqlari from "../pages/xidmetlerPages/reabilitasiyaAvadanliqlari";
+import SosialXidmetMuessiseleri from "../pages/xidmetlerPages/sosialXidmetMuessiseleri";
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
 
 const ROUTES = [
@@ -36,6 +38,14 @@ const ROUTES = [
       {
         path: "xidmetler/reabilitasiyaavadanliqlari",
         element: <ReabilitasiyaAvadanliqlari />,
+      },
+      {
+        path: "xidmetler/qaynarxettler",
+        element: <QaynarXettler />,
+      },
+      {
+        path: "xidmetler/sosialxidmetmuessiseleri",
+        element: <SosialXidmetMuessiseleri />,
       },
       {
         path: "*",

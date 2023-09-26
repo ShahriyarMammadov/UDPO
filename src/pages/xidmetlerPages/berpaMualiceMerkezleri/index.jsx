@@ -514,7 +514,7 @@ const BerpaVeMualiceMerkezleri = () => {
       ),
     },
     {
-      key: "11",
+      key: "12",
       label: <h4 style={{ margin: "0" }}>Protez-Ortopedik Bərpa Mərkəzi</h4>,
       children: (
         <>
@@ -581,7 +581,7 @@ const BerpaVeMualiceMerkezleri = () => {
       ),
     },
     {
-      key: "12",
+      key: "13",
       label: (
         <h4 style={{ margin: "0" }}>
           Protez-Ortopedik Bərpa Mərkəzinin Gəncə filialı
@@ -616,7 +616,7 @@ const BerpaVeMualiceMerkezleri = () => {
       ),
     },
     {
-      key: "13",
+      key: "14",
       label: <h4 style={{ margin: "0" }}>Bakı Uşaq Bərpa Mərkəzi</h4>,
       children: (
         <>
@@ -645,7 +645,7 @@ const BerpaVeMualiceMerkezleri = () => {
       ),
     },
     {
-      key: "14",
+      key: "15",
       label: <h4 style={{ margin: "0" }}>Naxçıvan Uşaq Bərpa Mərkəzi</h4>,
       children: (
         <>
@@ -685,7 +685,7 @@ const BerpaVeMualiceMerkezleri = () => {
       ),
     },
     {
-      key: "15",
+      key: "16",
       label: (
         <h4 style={{ margin: "0" }}>
           Xüsusi Qayğıya Ehtiyacı Olan Uşaqların Dövlət Reabilitasiya Müəssisəsi
