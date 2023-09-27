@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300;400&family=Tangerine:wght@700&display=swap');
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -5,6 +7,10 @@
 
 * {
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
