@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import CarouselComponent from "../../components/carousel";
 import NewsComponent from "../../components/news";
@@ -6,6 +6,9 @@ import ColleaguesComponent from "../../components/collegausCarousel";
 import RequestComponent from "../../components/request-sorgu";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       <section id="section1" className="news carousel">

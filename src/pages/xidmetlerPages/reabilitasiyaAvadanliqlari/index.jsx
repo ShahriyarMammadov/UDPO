@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
 
 const ReabilitasiyaAvadanliqlari = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="reabilitasiyaAvadanliqlariPage">
       <div className="container">

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import { Collapse } from "antd";
 import SiteNavigation from "../../../components/navigation";
 
 const BerpaVeMualiceMerkezleri = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     {
       key: "1",

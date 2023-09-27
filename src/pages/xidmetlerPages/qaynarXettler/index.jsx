@@ -1,8 +1,12 @@
 import { List } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
 import SiteNavigation from "../../../components/navigation";
 
 const QaynarXettler = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const data = [
     <div
       style={{

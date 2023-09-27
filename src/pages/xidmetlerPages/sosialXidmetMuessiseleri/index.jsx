@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
 import { Collapse } from "antd";
 
 const SosialXidmetMuessiseleri = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     {
       key: "1",

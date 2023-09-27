@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect } from "react";
 import "./App.css";
 import ROUTES from "./routes";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const router = createBrowserRouter(ROUTES);
 
   useEffect(() => {

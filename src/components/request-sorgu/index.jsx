@@ -43,7 +43,7 @@ const RequestComponent = () => {
               name="drone"
               value="Qanunların zəif icra olunması"
             />
-            <label for="one">Qanunların zəif icra olunması</label>
+            <label htmlFor="one">Qanunların zəif icra olunması</label>
           </div>
 
           <div>
@@ -53,7 +53,7 @@ const RequestComponent = () => {
               name="drone"
               value="İnfrastrukturun uyğun olmaması"
             />
-            <label for="two">İnfrastrukturun uyğun olmaması</label>
+            <label htmlFor="two">İnfrastrukturun uyğun olmaması</label>
           </div>
 
           <div>
@@ -63,7 +63,7 @@ const RequestComponent = () => {
               name="drone"
               value="Əlilliyi olan insanların hüquqlarını bilməməsi "
             />
-            <label for="four">
+            <label htmlFor="four">
               Əlilliyi olan insanların hüquqlarını bilməməsi{" "}
             </label>
           </div>
@@ -75,7 +75,7 @@ const RequestComponent = () => {
               name="drone"
               value="İctimai nəzarətin zəif olması"
             />
-            <label for="five">İctimai nəzarətin zəif olması</label>
+            <label htmlFor="five">İctimai nəzarətin zəif olması</label>
           </div>
 
           <div>
@@ -85,9 +85,9 @@ const RequestComponent = () => {
               name="drone"
               value="Laqeydlilik və məsuliyyətsizlik"
             />
-            <label for="six">Laqeydlilik və məsuliyyətsizlik</label>
+            <label htmlFor="six">Laqeydlilik və məsuliyyətsizlik</label>
           </div>
-          <button class="submitBtn" onClick={sendRequest}>
+          <button className="submitBtn" onClick={sendRequest}>
             Təqdim Et
           </button>
         </form>

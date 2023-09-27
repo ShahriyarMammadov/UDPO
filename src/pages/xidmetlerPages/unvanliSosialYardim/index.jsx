@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
 
 const UnvanliSosialYardim = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="unvanliSosialYardimPage">
       <div className="container">
