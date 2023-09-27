@@ -121,26 +121,8 @@ const Header = () => {
                 >
                   <div className="text">ÜNVANLI SOSİAL YARDIM</div>
                 </NavLink>
-                <NavLink
-                  to={"/xidmetler/menzilleteminat"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">MƏNZİLLƏ TƏMİNAT</div>
-                </NavLink>
                 <NavLink to={"/xidmetler/mualice"} title="Visitor Analytics">
                   <div className="text">MÜALİCƏ</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/avtomobilleteminat"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">AVTOMOBİLLƏ TƏMİNAT</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/sanatoriyakurortyollanislari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">SANATORİYA-KURORT YOLLANIŞLARI</div>
                 </NavLink>
                 <NavLink
                   to={"/xidmetler/reabilitasiyaavadanliqlari"}
@@ -153,32 +135,6 @@ const Header = () => {
                   title="Visitor Analytics"
                 >
                   <div className="text">SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/elektronxidmetler"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">ELEKTRON XİDMƏTLƏR</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/bankomatdanistifadeqaydalari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">BANKOMATDAN İSTİFADƏ QAYDALARI</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/menzilalanvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">
-                    AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR
-                  </div>
                 </NavLink>
                 <NavLink to={"/xidmetler/qaynarxettler"} title="Qaynar Xəttlər">
                   <div className="text">QAYNAR XƏTTLƏR</div>
