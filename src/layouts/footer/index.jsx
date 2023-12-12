@@ -57,22 +57,20 @@ const Footer = () => {
               <div className="social_bar">
                 <ul>
                   <li>
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                   </li>
                 </ul>
               </div>
-
             </div>
-            
           </nav>
         </div>
 
