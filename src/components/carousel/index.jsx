@@ -40,8 +40,8 @@ const CarouselComponent = () => {
         <div>
           <Link>
             <img src={news4} alt="news" className="carouselImage" />
-            <div v className="carouselContent">
-              <p>SOSİAL CƏHƏTDƏN HƏSSAS İNSANLARA SOSİAL XİDMƏT</p>
+            <div className="carouselContent">
+              <p>3 DEKABR - Beynəlxalq Əlilliyi Olan şəxslər günü</p>
             </div>
           </Link>
         </div>

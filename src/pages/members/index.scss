@@ -1,0 +1,22 @@
+#members {
+  font-family: "Mulish", sans-serif;
+  margin-top: 190px;
+  margin-bottom: 30px;
+  h1{
+    color: #1876c9;
+    font-size: 30px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    img {
+      width: 150px;
+    }
+    p {
+      margin-left: 20px;
+      color: #1876c9;
+      font-size: 20px;
+    }
+  }
+}
