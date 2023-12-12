@@ -1,38 +1,32 @@
 #colleaguesComponent {
-  padding: 40px 5px 0 5px;
+  // padding: 40px 5px 0 5px;
 
   .alice-carousel__wrapper {
-    margin-top: 10px;
+    margin-top: 2rem;
     background-color: white;
     height: 120px;
     padding: 20px;
 
-   ul{
-    text-align: center;
-  
-   }
- 
-  
-      .item {
-  
-        img{
-          height: 70px;
-    
-     
-        }
+    ul {
+      text-align: center;
+    }
 
-        @media only screen and (max-width: 768px) {
-          width: 100% !important;
-        }
+    .item {
+      img {
+        height: 70px;
       }
 
-
-  
+      @media only screen and (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
   }
-  .alice-carousel__prev-btn{
+
+  .alice-carousel__prev-btn {
     display: none;
-    }
-    .alice-carousel__next-btn{
-        display: none;
-    }
+  }
+
+  .alice-carousel__next-btn {
+    display: none;
+  }
 }

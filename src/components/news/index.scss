@@ -1,6 +1,5 @@
 #newsComponent {
-    
-    padding: 60px 0;
+    padding: 0 10px;
 
     .container {
 
@@ -26,26 +25,102 @@
             }
         }
 
+        @media only screen and (max-width: 900px) {
+            .newsCards {
+                a {
+                    width: calc((100% / 2) - 15px) !important;
+                    height: 300px;
+
+                    img {
+                        height: 300px !important;
+                    }
+
+                    p {
+                        bottom: 0px !important;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 645px) {
+            .newsCards {
+                flex-direction: column;
+
+                a {
+                    width: 100% !important;
+                    height: 400px;
+
+                    img {
+                        height: 400px !important;
+                    }
+
+                    p {
+                        padding: 20px 15px !important;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 645px) {
+            .newsCards {
+                a {
+                    height: 360px;
+
+                    img {
+                        height: 360px !important;
+                    }
+
+                    p {
+                        padding: 15px !important;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 380px) {
+            .newsCards {
+                a {
+                    height: 340px;
+
+                    img {
+                        height: 340px !important;
+                    }
+
+                    p {
+                        padding: 15px !important;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
         .newsCards {
-            margin-top: 10px;
+            margin-top: 2rem;
             display: flex;
             gap: 20px;
             align-items: center;
             flex-wrap: wrap;
+            justify-content: center;
 
             a {
                 width: calc((100% / 4) - 15px);
                 position: relative;
+                background-color: #183D3D;
+                min-width: 280px;
 
                 img {
                     width: 100%;
+                    height: 220px;
+                    object-fit: cover;
                 }
 
                 p {
                     position: absolute;
                     color: white;
                     font-weight: 500;
-                    bottom: 0;
+                    bottom: 5px;
                     padding: 10px 15px;
                     background: linear-gradient(90deg, rgba(232, 232, 242, 0) 0%, rgba(173, 173, 208, 0.7932422969187676) 15%, rgba(1, 2, 3, 0.9024859943977591) 100%);
                     width: 100%;

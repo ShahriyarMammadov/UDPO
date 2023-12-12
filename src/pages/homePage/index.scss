@@ -99,7 +99,7 @@ main {
     }
 
     #section3 {
-        margin-top: 7rem;
+        margin-top: 2rem;
         padding: 0 10px;
 
         @media only screen and (max-width: 630px) {
@@ -139,7 +139,7 @@ main {
         }
 
         .projectsCards {
-            margin-top: 10px;
+            margin-top: 2rem;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -178,8 +178,9 @@ main {
         }
     }
 
-    #section4 {
-        margin-top: 6rem;
-
+    #section4,
+    #section5,
+    #section6 {
+        margin-top: 2rem;
     }
 }

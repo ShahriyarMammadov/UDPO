@@ -23,27 +23,23 @@ const ColleaguesComponent = () => {
   };
 
   const items = [
-    
     <div className="item" data-value="1">
       <Image src={GİN} alt="gencler ve idman nazirliyi" />
     </div>,
-     <div className="item" data-value="5">
-     <Image src={ombudsman} alt="ombudsman" />
-   </div>,
     <div className="item" data-value="2">
-      <Image src={ecosoc} alt="ecosoc" />
+      <Image src={ombudsman} alt="ombudsman" />
     </div>,
     <div className="item" data-value="3">
+      <Image src={ecosoc} alt="ecosoc" />
+    </div>,
+    <div className="item" data-value="4">
       <Image src={insanhuquqlari} alt="insanhuquqlari" />
     </div>,
-       <div className="item" data-value="6">
-       <Image src={sehersalma} alt="sehersalma" />
-     </div>,
-    <div className="item" data-value="4">
-      <Image
-        src={MN}
-        alt="medeniyyetveturizmnazirliyi"
-      />
+    <div className="item" data-value="5">
+      <Image src={sehersalma} alt="sehersalma" />
+    </div>,
+    <div className="item" data-value="6">
+      <Image src={MN} alt="medeniyyetveturizmnazirliyi" />
     </div>,
     <div className="item" data-value="7">
       <Image src={smn} alt="sosialmudafienazirliyi" />
@@ -54,7 +50,7 @@ const ColleaguesComponent = () => {
     <div className="item" data-value="9">
       <Image src={undp} alt="undp" />
     </div>,
-      <div className="item" data-value="5">
+    <div className="item" data-value="10">
       <Image src={qhta} alt="QHT" />
     </div>,
   ];
@@ -62,10 +58,10 @@ const ColleaguesComponent = () => {
   return (
     <div id="colleaguesComponent">
       <div className="container">
-      <h1>Əməkdaşlarımız</h1>
+        <h1>Əməkdaşlarımız</h1>
       </div>
-       
-      <div className=" carousel">
+
+      <div className="carousel">
         <AliceCarousel
           mouseTracking
           autoPlay
@@ -84,7 +80,3 @@ const ColleaguesComponent = () => {
 };
 
 export default ColleaguesComponent;
-
-
-
-

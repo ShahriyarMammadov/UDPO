@@ -52,7 +52,6 @@ const HomePage = () => {
               <p>Bitmiş</p>
             </a>
           </div>
-           
         </div>
       </section>
 
