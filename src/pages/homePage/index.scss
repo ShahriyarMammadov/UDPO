@@ -8,17 +8,68 @@ main {
     }
 
     #section2 {
-        margin-top: 6.25rem;
+        margin-top: 2rem;
+        padding: 0 10px;
+
+        @media only screen and (max-width: 1014px) {
+            .servicesCards {
+                justify-content: space-evenly !important;
+
+                a {
+                    min-width: 300px !important;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 630px) {
+            .servicesCards {
+                flex-direction: column !important;
+
+                a {
+                    width: 100% !important;
+
+                    &.card {
+                        height: 280px !important;
+                        padding: 75px 30px !important;
+                        font-size: 24px !important;
+
+                        i {
+                            font-size: 70px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .servicesCards {
+                a {
+                    &.card {
+                        height: 210px !important;
+                        padding: 50px 30px !important;
+                        font-size: 20px !important;
+
+                        i {
+                            font-size: 60px !important;
+                        }
+                    }
+                }
+            }
+        }
+
         .servicesCards {
+            margin-top: 2rem;
+            flex-wrap: wrap;
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
             justify-content: space-between;
             gap: 10px;
-            flex-wrap: wrap;
 
             a {
                 text-decoration: none;
+                transition: all 0.5s;
+                min-width: 240px;
+
                 &.card {
                     margin-top: 10px;
                     width: 24%;
@@ -35,7 +86,7 @@ main {
                         padding: 0 0 15px 0;
                     }
 
-                    &:hover{
+                    &:hover {
                         background-color: #1876c9;
                         color: #f1efef;
                     }
@@ -47,14 +98,52 @@ main {
 
     }
 
-    #section3{
+    #section3 {
         margin-top: 7rem;
+        padding: 0 10px;
+
+        @media only screen and (max-width: 630px) {
+            .projectsCards {
+                flex-direction: column !important;
+
+                a {
+                    width: 100% !important;
+
+                    &.card {
+                        height: 280px !important;
+                        padding: 75px 30px !important;
+                        font-size: 24px !important;
+
+                        i {
+                            font-size: 70px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .projectsCards {
+                a {
+                    &.card {
+                        height: 210px !important;
+                        padding: 50px 30px !important;
+                        font-size: 20px !important;
+
+                        i {
+                            font-size: 60px !important;
+                        }
+                    }
+                }
+            }
+        }
+
         .projectsCards {
             margin-top: 10px;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-         
+
             gap: 10px;
             flex-wrap: wrap;
 
@@ -64,6 +153,7 @@ main {
                 &.card {
                     margin-top: 10px;
                     width: 24%;
+                    min-width: 300px;
                     height: 180px;
                     padding: 40px 30px;
                     color: #1876c9;
@@ -77,7 +167,7 @@ main {
                         padding: 0 0 15px 0;
                     }
 
-                    &:hover{
+                    &:hover {
                         background-color: #1876c9;
                         color: #f1efef;
                     }
@@ -88,7 +178,7 @@ main {
         }
     }
 
-    #section4{
+    #section4 {
         margin-top: 6rem;
 
     }

@@ -19,19 +19,19 @@ const HomePage = () => {
         <div className="container">
           <h1>Göstərilən Xidmətlər</h1>
           <div className="servicesCards">
-            <a href="#" className="card" target="_blank">
+            <a href="#" className="card">
               <i className="fa-regular fa-hospital"></i>
               <div className="serviceName">Bərpa və Müalicə Müəssisələri</div>
             </a>
-            <a href="#" className="card" target="_blank">
+            <a href="#" className="card">
               <i className="fa-regular fa-credit-card"></i>
               <div className="serviceName">Ünvanlı Sosial Yardım</div>
             </a>
-            <a href="#" className="card" target="_blank">
+            <a href="#" className="card">
               <i className="fa-solid fa-hand-holding-medical"></i>
               <div className="serviceName">Müalicə</div>
             </a>
-            <a href="#" className="card" target="_blank">
+            <a href="#" className="card">
               <i className="fa-solid fa-truck-medical"></i>
               <div className="serviceName">Sanatoriya Kurort Yollanışı</div>
             </a>
@@ -48,7 +48,7 @@ const HomePage = () => {
               <p>Cari</p>
             </a>
             <a href="#" className="card">
-            <i class="fa-solid fa-calendar-check"></i>
+              <i class="fa-solid fa-calendar-check"></i>
               <p>Bitmiş</p>
             </a>
           </div>
