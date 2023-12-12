@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
+import { Helmet } from "react-helmet";
 
 const Mualice = () => {
   useEffect(() => {
@@ -9,6 +10,11 @@ const Mualice = () => {
 
   return (
     <div id="mualicePage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>UDPO | Müalicə</title>
+      </Helmet>
+
       <div className="container">
         <SiteNavigation
           navigationData={{

@@ -1,0 +1,19 @@
+#bankomatdanIstifade {
+    padding: 0 10px;
+    padding-top: 2rem;
+    padding-bottom: 40px;
+
+    .headText {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .headText {
+            h1 {
+                font-size: 22px !important;
+            }
+        }
+    }
+}

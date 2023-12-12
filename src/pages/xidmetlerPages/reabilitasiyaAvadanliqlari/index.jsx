@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
+import { Helmet } from "react-helmet";
 
 const ReabilitasiyaAvadanliqlari = () => {
   useEffect(() => {
@@ -9,6 +10,11 @@ const ReabilitasiyaAvadanliqlari = () => {
 
   return (
     <div id="reabilitasiyaAvadanliqlariPage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>UDPO | Reabilitasiya Avadanlıqları</title>
+      </Helmet>
+
       <div className="container">
         <SiteNavigation
           navigationData={{

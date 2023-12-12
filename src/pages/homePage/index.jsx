@@ -4,6 +4,7 @@ import CarouselComponent from "../../components/carousel";
 import NewsComponent from "../../components/news";
 import ColleaguesComponent from "../../components/collegausCarousel";
 import RequestComponent from "../../components/request-sorgu";
+import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   useEffect(() => {
@@ -12,6 +13,11 @@ const HomePage = () => {
 
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Əlil Təşkilatları İttifaqı (UDPO)</title>
+      </Helmet>
+
       <section id="section1" className="news carousel">
         <CarouselComponent />
       </section>

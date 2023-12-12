@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
 import logo from "../../assets/logo.png";
-import { Button, Drawer, Radio, Space, Dropdown } from "antd";
+import { Button, Drawer, Dropdown, Collapse } from "antd";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -52,15 +52,323 @@ const Header = () => {
   // DRAWER
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState("left");
+
   const showDrawer = () => {
     setOpen(true);
   };
+
   const onClose = () => {
     setOpen(false);
   };
+
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
+
+  // DRAWER ITEMS
+  const draweritems = [
+    {
+      key: "1",
+      label: "Haqqımızda",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Biz Kimik
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Üzvlər
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Fəaliyyətlər
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "2",
+      label: "Xidmətlər",
+      children: (
+        <>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/berpavemualicemerkezleri"}
+            title="BƏRPA VƏ MÜALİCƏ"
+            onClick={onClose}
+          >
+            Bərpa və Müalicə
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/unvanlisosialyardim"}
+            title="ÜNVANLI SOSİAL YARDIM"
+            onClick={onClose}
+          >
+            Ünvanlı Sosial Yardım
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/menzilleteminat"}
+            title="MƏNZİLLƏ TƏMİNAT"
+            onClick={onClose}
+          >
+            Mənzillə Təminat
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/mualice"}
+            title="MÜALİCƏ"
+            onClick={onClose}
+          >
+            Müalicə
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/avtomobilleteminat"}
+            title="AVTOMOBİLLƏ TƏMİNAT"
+            onClick={onClose}
+          >
+            Avtomobillə Təminat
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/sanatoriyakurortyollanislari"}
+            title="SANATORİYA-KURORT YOLLANIŞLARI"
+            onClick={onClose}
+          >
+            Sanatoriya-Kurort Yollanışları
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/reabilitasiyaavadanliqlari"}
+            title=" REABİLİTASİYA AVADANLIQLARI"
+            onClick={onClose}
+          >
+            Reabilitasiya Avadanlıqları
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/sosialxidmetmuessiseleri"}
+            title="SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ"
+            onClick={onClose}
+          >
+            Sosial Xidmət Müəssisələri
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/elektronxidmetler"}
+            title="ELEKTRON XİDMƏTLƏR"
+            onClick={onClose}
+          >
+            Elektron Xidmətlər
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/BankomatdanIstifadeQaydalari"}
+            title="BANKOMATDAN İSTİFADƏ QAYDALARI"
+            onClick={onClose}
+          >
+            Bankomatdan İstifadə Qaydaları
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/menzilalanvenovbededuranlar"}
+            title="MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR"
+            onClick={onClose}
+          >
+            Mənzil Alanlar və Növbədə Duranlar
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
+            title=" AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR"
+            onClick={onClose}
+          >
+            Avtomobil Alanlar və Növbədə Duranlar
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/qaynarxettler"}
+            title=" QAYNAR XƏTTLƏR"
+            onClick={onClose}
+          >
+            Qaynar Xəttlər
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "3",
+      label: "Əlillik",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Ümumi Məlumat
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Əlilliyin Təyin Olunmasə
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Əmək Pensiyaları
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Sosial Müavinət
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Tibbi Sosial Ekspert Mərkəzi
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Sosial Müavinət Alanların Siyahısı
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "4",
+      label: "QHT",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Qanun QHT
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Təsis Sənədləri
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Koalisiyalar
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            QHT Xəbərlər
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            İctimai Şuralar
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "5",
+      label: "Xəbərlər",
+      children: (
+        <>
+          <NavLink
+            to={"/xeberler"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Xəbərlər
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "6",
+      label: "Qalereya",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Video Qalereya
+          </NavLink>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Foto Qalereya
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "7",
+      label: "Qonaq Kitabı",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Qonaq Kitabı
+          </NavLink>
+        </>
+      ),
+    },
+    {
+      key: "8",
+      label: "Əlaqə",
+      children: (
+        <>
+          <NavLink
+            to={"/"}
+            style={{ display: "block", marginTop: "10px" }}
+            onClick={onClose}
+          >
+            Əlaqə
+          </NavLink>
+        </>
+      ),
+    },
+  ];
 
   return (
     <header className={`${visible ? "" : "resize"}`}>
@@ -191,7 +499,7 @@ const Header = () => {
                   <div className="text">ELEKTRON XİDMƏTLƏR</div>
                 </NavLink>
                 <NavLink
-                  to={"/xidmetler/bankomatdanistifadeqaydalari"}
+                  to={"/xidmetler/BankomatdanIstifadeQaydalari"}
                   title="Visitor Analytics"
                 >
                   <div className="text">BANKOMATDAN İSTİFADƏ QAYDALARI</div>
@@ -266,7 +574,7 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/xeberler"} className="parent">
                 XƏBƏRLƏR
               </NavLink>
             </div>
@@ -308,9 +616,7 @@ const Header = () => {
         open={open}
         key={placement}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <Collapse accordion items={draweritems} />
       </Drawer>
     </header>
   );

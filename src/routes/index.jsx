@@ -10,6 +10,7 @@ import ReabilitasiyaAvadanliqlari from "../pages/xidmetlerPages/reabilitasiyaAva
 import SosialXidmetMuessiseleri from "../pages/xidmetlerPages/sosialXidmetMuessiseleri";
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
 import Members from "../pages/members";
+import BankomatdanIstifadeQaydalari from "../pages/xidmetlerPages/bankomatdanİstifade";
 
 const ROUTES = [
   {
@@ -47,6 +48,10 @@ const ROUTES = [
       {
         path: "xidmetler/qaynarxettler",
         element: <QaynarXettler />,
+      },
+      {
+        path: "xidmetler/BankomatdanIstifadeQaydalari",
+        element: <BankomatdanIstifadeQaydalari />,
       },
       {
         path: "xidmetler/sosialxidmetmuessiseleri",

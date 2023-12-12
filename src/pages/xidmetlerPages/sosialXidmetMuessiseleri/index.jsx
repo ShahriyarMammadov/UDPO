@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./index.scss";
 import SiteNavigation from "../../../components/navigation";
 import { Collapse } from "antd";
+import { Helmet } from "react-helmet";
 
 const SosialXidmetMuessiseleri = () => {
   useEffect(() => {
@@ -264,7 +265,12 @@ const SosialXidmetMuessiseleri = () => {
     },
   ];
   return (
-    <div id="sosialXidmetMuessiseleri">
+    <div id="sosialXidmetMuessiseleri" style={{ padding: "0 10px 40px 10px" }}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>UDPO | Sosial Xidmət Müəssisələri</title>
+      </Helmet>
+
       <div className="container">
         <SiteNavigation
           navigationData={{

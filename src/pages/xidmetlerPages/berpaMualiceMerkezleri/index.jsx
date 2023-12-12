@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./index.scss";
 import { Collapse } from "antd";
 import SiteNavigation from "../../../components/navigation";
+import { Helmet } from "react-helmet";
 
 const BerpaVeMualiceMerkezleri = () => {
   useEffect(() => {
@@ -739,7 +740,12 @@ const BerpaVeMualiceMerkezleri = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container" style={{ marginBottom: "40px" }}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>UDPO | Bərpa və Müalicə Mərkəzləri</title>
+      </Helmet>
+
       <SiteNavigation
         navigationData={{
           category: "Xidmətlər",
