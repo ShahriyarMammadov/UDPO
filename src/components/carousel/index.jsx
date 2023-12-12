@@ -42,8 +42,8 @@ const CarouselComponent = () => {
         <div>
           <Link>
             <img src={news4} alt="news" className="carouselImage" />
-            <div v className="carouselContent">
-              
+            <div className="carouselContent">
+              3 DEKABR - Beynəlxalq Əlilliyi Olan şəxslər günü 
             </div>
           </Link>
         </div>
