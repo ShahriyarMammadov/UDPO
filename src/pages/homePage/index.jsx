@@ -9,6 +9,7 @@ const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <main>
       <section id="section1" className="news carousel">
