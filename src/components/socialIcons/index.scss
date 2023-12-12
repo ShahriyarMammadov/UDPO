@@ -1,11 +1,17 @@
 #icons {
     position: fixed;
     left: 20px;
-    top: 45%;
+    top: 40%;
     z-index: 80;
     background-color: white;
     border-radius: 10px;
     text-align: center;
+
+    @media only screen and (max-width: 1000px) {
+        left: auto;
+        right: 20px;
+        top: 35%;
+    }
 
     a {
         text-decoration: none;

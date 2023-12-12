@@ -1,8 +1,11 @@
 #carousel {
+
   img {
     height: 700px;
     object-fit: cover;
+    object-position: top;
     width: 100%;
+    max-width: 100%;
   }
 
   .carouselContent {
@@ -12,11 +15,62 @@
     background-color: #1876c9;
     border-radius: 6px;
     text-align: center;
-    width: auto;
-    padding: 5px 10px;
+    padding: 5px 20px;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     margin-left: 100px;
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .carouselContent {
+      margin-left: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    img {
+      height: 600px;
+    }
+
+    .carouselContent {
+      font-size: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 825px) {
+    img {
+      height: 550px;
+    }
+
+    .carouselContent {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 715px) {
+    .carouselContent {
+      max-width: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    img {
+      height: 450px;
+    }
+
+    .carouselContent {
+      max-width: 280px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    img {
+      height: 400px;
+    }
+
   }
 }

@@ -1,27 +1,15 @@
-
-
-import React from 'react';
+import React from "react";
 
 const Members = () => {
   return (
-    <div> 
+    <div>
       <div className="container">
-    
-    ÜZVLƏR
-    <br />
-    ÜZVLƏR
-    ÜZVLƏR
-    ÜZVLƏR
-    ÜZVLƏR
-    ÜZVLƏR
-    ÜZVLƏR
-    ÜZVLƏR
-
+        ÜZVLƏR
+        <br />
+        ÜZVLƏR ÜZVLƏR ÜZVLƏR ÜZVLƏR ÜZVLƏR ÜZVLƏR ÜZVLƏR
       </div>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Members ;
+export default Members;

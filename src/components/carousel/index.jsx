@@ -8,18 +8,16 @@ import news4 from "../../assets/images/news4.jpg";
 import { Link } from "react-router-dom";
 
 const CarouselComponent = () => {
-  const onChange = (currentSlide) => {
-    // console.log(currentSlide);
-  };
+  const onChange = (currentSlide) => {};
 
   return (
     <div id="carousel" className="carousel">
       <Carousel afterChange={onChange} autoplay>
         <div className="cover">
           <Link>
-            <img src={news1} alt="news" className="carouselImage"/>
+            <img src={news1} alt="news" className="carouselImage" />
             <div className="carouselContent">
-             HAMI ÜÇÜN BƏRABƏR İMKANLAR
+              <p>HAMI ÜÇÜN BƏRABƏR İMKANLAR</p>
             </div>
           </Link>
         </div>
@@ -27,7 +25,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news2} alt="news" className=" carouselImage" />
             <div className="carouselContent">
-           HAMI ÜÇÜN LAYİQLİ İŞ 
+              <p>HAMI ÜÇÜN LAYİQLİ İŞ</p>
             </div>
           </Link>
         </div>
@@ -35,7 +33,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news3} alt="news" className="carouselImage" />
             <div className="carouselContent">
-             SOSİAL CƏHƏTDƏN HƏSSAS İNSANLARA SOSİAL XİDMƏT
+              <p>SOSİAL CƏHƏTDƏN HƏSSAS İNSANLARA SOSİAL XİDMƏT</p>
             </div>
           </Link>
         </div>
@@ -43,7 +41,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news4} alt="news" className="carouselImage" />
             <div v className="carouselContent">
-              
+              <p>SOSİAL CƏHƏTDƏN HƏSSAS İNSANLARA SOSİAL XİDMƏT</p>
             </div>
           </Link>
         </div>

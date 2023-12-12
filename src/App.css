@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300;400&family=Tangerine:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300;400&family=Tangerine:wght@700&display=swap");
 
 .container {
   max-width: 1200px;
@@ -17,4 +17,16 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 155px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 70px;
+  }
 }
