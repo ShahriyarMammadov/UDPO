@@ -39,15 +39,32 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="section3" className="news">
+      <section id="section3" className="projects">
+        <div className="container">
+          <h1>Layihələr</h1>
+          <div className="projectsCards">
+            <a href="#" className="card">
+              <i class="fa-solid fa-bolt"></i>
+              <p>Cari</p>
+            </a>
+            <a href="#" className="card">
+            <i class="fa-solid fa-calendar-check"></i>
+              <p>Bitmiş</p>
+            </a>
+          </div>
+           
+        </div>
+      </section>
+
+      <section id="section4" className="news">
         <NewsComponent />
       </section>
 
-      <section id="section4" className="colleagues">
+      <section id="section5" className="colleagues">
         <ColleaguesComponent />
       </section>
 
-      <section id="section5" className="request">
+      <section id="section6" className="request">
         <RequestComponent />
       </section>
     </main>

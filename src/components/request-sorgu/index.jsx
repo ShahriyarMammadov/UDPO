@@ -88,7 +88,7 @@ const RequestComponent = () => {
             <label htmlFor="six">Laqeydlilik və məsuliyyətsizlik</label>
           </div>
           <button className="submitBtn" onClick={sendRequest}>
-            Təqdim Et
+            Göndər
           </button>
         </form>
       </div>

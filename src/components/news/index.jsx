@@ -11,7 +11,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+                src="https://www.qht.az/Images/original/ef2b9f38a48a4982aa85f19aa1e1db059102023454764.jpg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -29,7 +29,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+              src="https://www.qht.az/Images/original/ef2b9f38a48a4982aa85f19aa1e1db059102023454764.jpg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -47,7 +47,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+              src="http://udpo.az/uploads/dim3.jpg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -65,7 +65,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+              src="http://udpo.az/uploads/dim3.jpg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -83,7 +83,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+              src="http://udpo.az/uploads/sax.jpeg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -101,7 +101,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-                src="https://img.freepik.com/free-vector/breaking-news-concept_23-2148514216.jpg?w=2000"
+              src="http://udpo.az/uploads/sax.jpeg"
                 alt="News"
               />
               <p>Bu gunlerde</p>

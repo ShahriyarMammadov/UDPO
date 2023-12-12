@@ -13,15 +13,13 @@ const CarouselComponent = () => {
   };
 
   return (
-    <div id="carousel">
+    <div id="carousel" className="carousel">
       <Carousel afterChange={onChange} autoplay>
-        <div>
+        <div className="cover">
           <Link>
-            <img src={news1} alt="news" className="carouselImage" />
+            <img src={news1} alt="news" className="carouselImage"/>
             <div className="carouselContent">
-              Bakının Azadlıq meydanında Vətən müharibəsində Qələbəyə həsr
-              olunmuş Zəfər paradı keçirilir Azərbaycan Prezidenti İlham Əliyev
-              və Türkiyə Prezidenti Rəcəb Tayyib Ərdoğan paradda iştirak edirlər
+             HAMI ÜÇÜN BƏRABƏR İMKANLAR
             </div>
           </Link>
         </div>
@@ -29,9 +27,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news2} alt="news" className=" carouselImage" />
             <div className="carouselContent">
-              Bakının Azadlıq meydanında Vətən müharibəsində Qələbəyə həsr
-              olunmuş Zəfər paradı keçirilir Azərbaycan Prezidenti İlham Əliyev
-              və Türkiyə Prezidenti Rəcəb Tayyib Ərdoğan paradda iştirak edirlər
+           HAMI ÜÇÜN LAYİQLİ İŞ 
             </div>
           </Link>
         </div>
@@ -39,9 +35,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news3} alt="news" className="carouselImage" />
             <div className="carouselContent">
-              Bakının Azadlıq meydanında Vətən müharibəsində Qələbəyə həsr
-              olunmuş Zəfər paradı keçirilir Azərbaycan Prezidenti İlham Əliyev
-              və Türkiyə Prezidenti Rəcəb Tayyib Ərdoğan paradda iştirak edirlər
+             SOSİAL CƏHƏTDƏN HƏSSAS İNSANLARA SOSİAL XİDMƏT
             </div>
           </Link>
         </div>
@@ -49,9 +43,7 @@ const CarouselComponent = () => {
           <Link>
             <img src={news4} alt="news" className="carouselImage" />
             <div v className="carouselContent">
-              Bakının Azadlıq meydanında Vətən müharibəsində Qələbəyə həsr
-              olunmuş Zəfər paradı keçirilir Azərbaycan Prezidenti İlham Əliyev
-              və Türkiyə Prezidenti Rəcəb Tayyib Ərdoğan paradda iştirak edirlər
+              
             </div>
           </Link>
         </div>

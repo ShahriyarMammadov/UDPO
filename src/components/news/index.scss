@@ -1,5 +1,6 @@
 #newsComponent {
-    padding: 40px 0;
+    
+    padding: 60px 0;
 
     .container {
 
@@ -8,7 +9,7 @@
             margin-top: 20px;
             text-decoration: none;
             color: #183D3D;
-            font-weight: 700;
+            font-weight: 300;
             width: fit-content;
             transition: all 0.5s;
 
@@ -17,7 +18,7 @@
             }
 
             &:hover {
-                color: red;
+                color: #1876c9;
 
                 i {
                     padding-left: 10px;
@@ -26,6 +27,7 @@
         }
 
         .newsCards {
+            margin-top: 10px;
             display: flex;
             gap: 20px;
             align-items: center;

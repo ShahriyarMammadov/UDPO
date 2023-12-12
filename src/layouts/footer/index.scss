@@ -2,7 +2,7 @@ footer {
   font-family: "Poppins", sans-serif;
   .footer {
     .footer_top {
-      background-color: #283646;
+      background-color: #2e3131;
       padding: 70px 0;
 
       nav {
@@ -16,7 +16,7 @@ footer {
           align-items: center;
           a {
             img {
-              width: 120px;
+              width: 110px;
             }
           }
 
@@ -62,6 +62,7 @@ footer {
                 border-radius: 100%;
                 display: grid;
                 place-items: center;
+              cursor: pointer;
                 &:hover {
                   background: #fff;
                   color: #0672aa ;
@@ -77,7 +78,7 @@ footer {
     .footer_bottom {
       font-size: 14px;
       padding: 20px;
-      background-color: #0672aa;
+      background-color: #1876c9;
       text-align: center;
       color: white;
     }

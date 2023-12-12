@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import logo from "../../assets/logowhite.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,21 +20,10 @@ const Footer = () => {
                     <Link to="/about"> Haqqımızda</Link>
                   </li>
                   <li>
-                    <Link to="/services"> Xidmətlər</Link>
-                  </li>
-                  <li>
                     <Link to="/disability"> Əlillik</Link>
                   </li>
-                </ul>
-                <ul className="menu_row">
                   <li>
                     <Link to="/news"> Xəbərlər</Link>
-                  </li>
-                  <li>
-                    <Link to="/galary"> Qalereya</Link>
-                  </li>
-                  <li>
-                    <Link to="/NGO">QHT </Link>
                   </li>
                 </ul>
                 <ul className="menu_row">

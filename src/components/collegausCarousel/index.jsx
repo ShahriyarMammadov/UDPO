@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./index.scss";
-import genclerveidmannaziri from "../../assets/images/collegaus/genclerveidmannazirliyi.jpg";
-import ecosoc from "../../assets/images/collegaus/ecosoc.jpg";
-import insanhuquqlari from "../../assets/images/collegaus/insanhuquqlari.jpg";
-import medeniyyetveturizmnazirliyi from "../../assets/images/collegaus/medeniyyetveturizmnazirliyi.png";
+import GİN from "../../assets/images/collegaus/GİN.png";
+import ecosoc from "../../assets/images/collegaus/ecosoc.png";
+import insanhuquqlari from "../../assets/images/collegaus/unhr.png";
+import MN from "../../assets/images/collegaus/MN.png";
 import ombudsman from "../../assets/images/collegaus/ombudsman.png";
-import sehersalma from "../../assets/images/collegaus/sehersalma.jpg";
-// import sosialmudafienazirliyi from "../../assets/images/collegaus/sosialmudafienazirliyi.png";
-import undesa from "../../assets/images/collegaus/undesa.jpg";
+import qhta from "../../assets/images/collegaus/qhta.png";
+import sehersalma from "../../assets/images/collegaus/ardsak.png";
+import smn from "../../assets/images/collegaus/smn.png";
+import undesa from "../../assets/images/collegaus/undesa.png";
 import undp from "../../assets/images/collegaus/undp.png";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -22,46 +23,53 @@ const ColleaguesComponent = () => {
   };
 
   const items = [
+    
     <div className="item" data-value="1">
-      <Image src={genclerveidmannaziri} alt="gencler ve idman nazirliyi" />
+      <Image src={GİN} alt="gencler ve idman nazirliyi" />
     </div>,
+     <div className="item" data-value="5">
+     <Image src={ombudsman} alt="ombudsman" />
+   </div>,
     <div className="item" data-value="2">
       <Image src={ecosoc} alt="ecosoc" />
     </div>,
     <div className="item" data-value="3">
       <Image src={insanhuquqlari} alt="insanhuquqlari" />
     </div>,
+       <div className="item" data-value="6">
+       <Image src={sehersalma} alt="sehersalma" />
+     </div>,
     <div className="item" data-value="4">
       <Image
-        src={medeniyyetveturizmnazirliyi}
+        src={MN}
         alt="medeniyyetveturizmnazirliyi"
       />
     </div>,
-    <div className="item" data-value="5">
-      <Image src={ombudsman} alt="ombudsman" />
+    <div className="item" data-value="7">
+      <Image src={smn} alt="sosialmudafienazirliyi" />
     </div>,
-    <div className="item" data-value="6">
-      <Image src={sehersalma} alt="sehersalma" />
-    </div>,
-    // <div className="item" data-value="7">
-    //   <Image src={sosialmudafienazirliyi} alt="sosialmudafienazirliyi" />
-    // </div>,
     <div className="item" data-value="8">
       <Image src={undesa} alt="undesa" />
     </div>,
     <div className="item" data-value="9">
       <Image src={undp} alt="undp" />
     </div>,
+      <div className="item" data-value="5">
+      <Image src={qhta} alt="QHT" />
+    </div>,
   ];
 
   return (
     <div id="colleaguesComponent">
-      <div className="container carousel">
-        <h1>ƏMƏKDAŞLARIMIZ</h1>
+      <div className="container">
+      <h1>Əməkdaşlarımız</h1>
+      </div>
+       
+      <div className=" carousel">
         <AliceCarousel
           mouseTracking
           autoPlay
-          autoPlayControls
+          // autoPlayControls
           autoPlayStrategy="none"
           autoPlayInterval={1000}
           animationDuration={1000}
@@ -76,3 +84,7 @@ const ColleaguesComponent = () => {
 };
 
 export default ColleaguesComponent;
+
+
+
+

@@ -69,6 +69,22 @@ const Header = () => {
                 <i className="fa-solid fa-phone"></i>
                 (+994 12) 434 48 36
               </a>
+              <div className="social_bar">
+                <ul>
+                  <li>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-instagram"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-youtube"></i>
+                  </li>
+                </ul>
+              </div>
               <i className="fa-solid fa-magnifying-glass"></i>
               <Dropdown
                 menu={{
@@ -86,187 +102,218 @@ const Header = () => {
         </div>
 
         <div className="headerBottom">
-          <nav className="container">
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent first">
-                AZƏRBAYCAN <i className="fa-solid fa-chevron-down"></i>
-              </NavLink>
-              <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
-                  <div className="text">ƏTRAFLI MƏLUMATLAR</div>
+            <nav className="container">
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent first">
+                  HAQQIMIZDA <i className="fa-solid fa-chevron-down"></i>
                 </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
-                  <div className="text">TURİZM</div>
+                <div className="dropdown-content">
+                  <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                    <div className="text">BİZ KİMİK</div>
+                  </NavLink>
+                  <NavLink to={"/members"} title="Terminlər">
+                    <div className="text">ÜZVLƏR</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">FƏALİYYƏTLƏR</div>
+                  </NavLink>
+                </div>
+              </div>
+
+              <div className="dropdown">
+                <NavLink to={"/xidmetler"} className="parent">
+                  XİDMƏTLƏR <i className="fa-solid fa-chevron-down"></i>
                 </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">BAYRAM GÜNLƏRİ</div>
+                <div className="dropdown-content">
+                  <NavLink
+                    to={"/xidmetler/berpavemualicemerkezleri"}
+                    title="Zəmanət"
+                  >
+                    <div className="text">BƏRPA VƏ MÜALİCƏ</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/unvanlisosialyardim"}
+                    title="Terminlər"
+                  >
+                    <div className="text">ÜNVANLI SOSİAL YARDIM</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/menzilleteminat"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">MƏNZİLLƏ TƏMİNAT</div>
+                  </NavLink>
+                  <NavLink to={"/xidmetler/mualice"} title="Visitor Analytics">
+                    <div className="text">MÜALİCƏ</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/avtomobilleteminat"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">AVTOMOBİLLƏ TƏMİNAT</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/sanatoriyakurortyollanislari"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">SANATORİYA-KURORT YOLLANIŞLARI</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/reabilitasiyaavadanliqlari"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">REABİLİTASİYA AVADANLIQLARI</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/sosialxidmetmuessiseleri"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/elektronxidmetler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">ELEKTRON XİDMƏTLƏR</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/bankomatdanistifadeqaydalari"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">BANKOMATDAN İSTİFADƏ QAYDALARI</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/menzilalanvenovbededuranlar"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">
+                      AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR
+                    </div>
+                  </NavLink>
+                  <NavLink
+                    to={"/xidmetler/qaynarxettler"}
+                    title="Qaynar Xəttlər"
+                  >
+                    <div className="text">QAYNAR XƏTTLƏR</div>
+                  </NavLink>
+                </div>
+              </div>
+
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  ƏLİLLİK <i className="fa-solid fa-chevron-down"></i>
+                </NavLink>
+                <div className="dropdown-content">
+                  <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                    <div className="text">ÜMUMİ MƏLUMAT</div>
+                  </NavLink>
+                  <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                    <div className="text">ƏLİLLİYİN TƏYİN OLUNMASI</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">ƏMƏK PENSİYALARI</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">SOSİAL MÜAVİNƏT</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">TİBBİ SOSİAL EKSPERT MƏRKƏZİ</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">
+                      SOSİAL MÜAVİNƏT ALANLARIN SİYAHISI
+                    </div>
+                  </NavLink>
+                </div>
+              </div>
+
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  QHT <i className="fa-solid fa-chevron-down"></i>
+                </NavLink>
+                <div className="dropdown-content">
+                  <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                    <div className="text">QANUN {`QHT`}</div>
+                  </NavLink>
+                  <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                    <div className="text">TƏSİS SƏNƏDLƏRİ</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">KOALİSİYALAR</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">QHT XƏBƏRLƏR</div>
+                  </NavLink>
+                  <NavLink
+                    to={"/haqqimizda/terminler"}
+                    title="Visitor Analytics"
+                  >
+                    <div className="text">İCTİMAİ ŞURALAR</div>
+                  </NavLink>
+                </div>
+              </div>
+
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  XƏBƏRLƏR
                 </NavLink>
               </div>
-            </div>
 
-            <div className="dropdown">
-              <NavLink to={"/xidmetler"} className="parent">
-                XİDMƏTLƏR <i className="fa-solid fa-chevron-down"></i>
-              </NavLink>
-              <div className="dropdown-content">
-                <NavLink
-                  to={"/xidmetler/berpavemualicemerkezleri"}
-                  title="Zəmanət"
-                >
-                  <div className="text">BƏRPA VƏ MÜALİCƏ</div>
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  QALEREYA <i className="fa-solid fa-chevron-down"></i>
                 </NavLink>
-                <NavLink
-                  to={"/xidmetler/unvanlisosialyardim"}
-                  title="Terminlər"
-                >
-                  <div className="text">ÜNVANLI SOSİAL YARDIM</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/menzilleteminat"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">MƏNZİLLƏ TƏMİNAT</div>
-                </NavLink>
-                <NavLink to={"/xidmetler/mualice"} title="Visitor Analytics">
-                  <div className="text">MÜALİCƏ</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/avtomobilleteminat"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">AVTOMOBİLLƏ TƏMİNAT</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/sanatoriyakurortyollanislari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">SANATORİYA-KURORT YOLLANIŞLARI</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/reabilitasiyaavadanliqlari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">REABİLİTASİYA AVADANLIQLARI</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/sosialxidmetmuessiseleri"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/elektronxidmetler"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">ELEKTRON XİDMƏTLƏR</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/bankomatdanistifadeqaydalari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">BANKOMATDAN İSTİFADƏ QAYDALARI</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/menzilalanvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">
-                    AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR
-                  </div>
-                </NavLink>
-                <NavLink to={"/xidmetler/qaynarxettler"} title="Qaynar Xəttlər">
-                  <div className="text">QAYNAR XƏTTLƏR</div>
+                <div className="dropdown-content">
+                  <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                    <div className="text">VİDEO QALEREYA</div>
+                  </NavLink>
+                  <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                    <div className="text">FOTO QALEREYA</div>
+                  </NavLink>
+                </div>
+              </div>
+
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  QONAQ KİTABI
                 </NavLink>
               </div>
-            </div>
 
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                ƏLİLLİK <i className="fa-solid fa-chevron-down"></i>
-              </NavLink>
-              <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
-                  <div className="text">ÜMUMİ MƏLUMAT</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
-                  <div className="text">ƏLİLLİYİN TƏYİN OLUNMASI</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">ƏMƏK PENSİYALARI</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">SOSİAL MÜAVİNƏT</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">TİBBİ SOSİAL EKSPERT MƏRKƏZİ</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">SOSİAL MÜAVİNƏT ALANLARIN SİYAHISI</div>
+              <div className="dropdown">
+                <NavLink to={"/haqqimizda"} className="parent">
+                  ƏLAQƏ
                 </NavLink>
               </div>
-            </div>
+            </nav>
 
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                QHT <i className="fa-solid fa-chevron-down"></i>
-              </NavLink>
-              <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
-                  <div className="text">QANUN {`QHT`}</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
-                  <div className="text">TƏSİS SƏNƏDLƏRİ</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">KOALİSİYALAR</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">QHT XƏBƏRLƏR</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">İCTİMAİ ŞURALAR</div>
-                </NavLink>
-              </div>
-            </div>
-
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                XƏBƏRLƏR
-              </NavLink>
-            </div>
-
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                QALEREYA <i className="fa-solid fa-chevron-down"></i>
-              </NavLink>
-              <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
-                  <div className="text">VİDEO QALEREYA</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
-                  <div className="text">FOTO QALEREYA</div>
-                </NavLink>
-              </div>
-            </div>
-
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                QONAQ KİTABI
-              </NavLink>
-            </div>
-
-            <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
-                ƏLAQƏ
-              </NavLink>
-            </div>
-          </nav>
+          
         </div>
       </div>
     </header>

@@ -1,12 +1,38 @@
 #colleaguesComponent {
-    padding: 40px 5px 0 5px;
+  padding: 40px 5px 0 5px;
 
-    .item {
-        img {
+  .alice-carousel__wrapper {
+    margin-top: 10px;
+    background-color: white;
+    height: 120px;
+    padding: 20px;
 
-            @media only screen and (max-width: 768px){
-                width: 100% !important;
-            }
+   ul{
+    text-align: center;
+  
+   }
+ 
+  
+      .item {
+  
+        img{
+          height: 70px;
+    
+     
         }
+
+        @media only screen and (max-width: 768px) {
+          width: 100% !important;
+        }
+      }
+
+
+  
+  }
+  .alice-carousel__prev-btn{
+    display: none;
+    }
+    .alice-carousel__next-btn{
+        display: none;
     }
 }

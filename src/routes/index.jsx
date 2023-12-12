@@ -9,6 +9,7 @@ import QaynarXettler from "../pages/xidmetlerPages/qaynarXettler";
 import ReabilitasiyaAvadanliqlari from "../pages/xidmetlerPages/reabilitasiyaAvadanliqlari";
 import SosialXidmetMuessiseleri from "../pages/xidmetlerPages/sosialXidmetMuessiseleri";
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
+import Members from "../pages/members";
 
 const ROUTES = [
   {
@@ -22,6 +23,10 @@ const ROUTES = [
       {
         path: "xeberler",
         element: <NewsPage />,
+      },
+      {
+        path: "members",
+        element: <Members />,
       },
       {
         path: "xidmetler/berpavemualicemerkezleri",
@@ -42,6 +47,10 @@ const ROUTES = [
       {
         path: "xidmetler/qaynarxettler",
         element: <QaynarXettler />,
+      },
+      {
+        path: "xidmetler/sosialxidmetmuessiseleri",
+        element: <SosialXidmetMuessiseleri />,
       },
       {
         path: "xidmetler/sosialxidmetmuessiseleri",

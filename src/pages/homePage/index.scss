@@ -1,11 +1,14 @@
 main {
+    font-family: "Poppins", sans-serif;
     background-color: #f1efef;
 
     h1 {
-        color: #394867;
+        color: #1876c9;
+        font-weight: bold;
     }
 
     #section2 {
+        margin-top: 6.25rem;
         .servicesCards {
             display: flex;
             align-items: center;
@@ -16,26 +19,77 @@ main {
 
             a {
                 text-decoration: none;
-
                 &.card {
-                    background-color: #183D3D;
+                    margin-top: 10px;
                     width: 24%;
                     height: 180px;
                     padding: 40px 30px;
-                    color: white;
-                    border-radius: 10px;
-                    font-size: 20px;
+                    color: #1876c9;
+                    border-radius: 20px;
+                    font-size: 18px;
                     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
                     text-align: center;
 
                     i {
-                        font-size: 40px;
+                        font-size: 35px;
                         padding: 0 0 15px 0;
+                    }
+
+                    &:hover{
+                        background-color: #1876c9;
+                        color: #f1efef;
                     }
                 }
             }
 
 
         }
+
+    }
+
+    #section3{
+        margin-top: 7rem;
+        .projectsCards {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+         
+            gap: 10px;
+            flex-wrap: wrap;
+
+            a {
+                text-decoration: none;
+
+                &.card {
+                    margin-top: 10px;
+                    width: 24%;
+                    height: 180px;
+                    padding: 40px 30px;
+                    color: #1876c9;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+                    text-align: center;
+
+                    i {
+                        font-size: 35px;
+                        padding: 0 0 15px 0;
+                    }
+
+                    &:hover{
+                        background-color: #1876c9;
+                        color: #f1efef;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    #section4{
+        margin-top: 6rem;
+
     }
 }
