@@ -525,27 +525,39 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/elillik"} className="parent">
                 ƏLİLLİK <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                <NavLink to={"/elillik/umumimelumat"} title="ÜMUMİ MƏLUMAT">
                   <div className="text">ÜMUMİ MƏLUMAT</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                <NavLink
+                  to={"/elillik/elilliyinteyinolunmasi"}
+                  title="ƏLİLLİYİN TƏYİN OLUNMASI"
+                >
                   <div className="text">ƏLİLLİYİN TƏYİN OLUNMASI</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
+                <NavLink
+                  to={"/elillik/emekpensiyalari"}
+                  title="ƏMƏK PENSİYALARI"
+                >
                   <div className="text">ƏMƏK PENSİYALARI</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
+                <NavLink
+                  to={"/elillik/beynelxalqgunler"}
+                  title="Beynəlxalq Günlər"
+                >
+                  <div className="text">BEYNƏLXALQ GÜNLƏR</div>
+                </NavLink>
+                <NavLink to={"/elillik/sosialmuavinet"} title="SOSİAL MÜAVİNƏT">
                   <div className="text">SOSİAL MÜAVİNƏT</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">TİBBİ SOSİAL EKSPERT MƏRKƏZİ</div>
-                </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">SOSİAL MÜAVİNƏT ALANLARIN SİYAHISI</div>
+                <NavLink
+                  to={"/elillik/dsmfseherverayonsobeleri"}
+                  title="DSMF-in ŞƏHƏR VƏ RAYON ŞÖBƏLƏRİ"
+                >
+                  <div className="text">DSMF-in ŞƏHƏR VƏ RAYON ŞÖBƏLƏRİ</div>
                 </NavLink>
               </div>
             </div>

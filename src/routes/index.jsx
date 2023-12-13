@@ -11,6 +11,12 @@ import SosialXidmetMuessiseleri from "../pages/xidmetlerPages/sosialXidmetMuessi
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
 import Members from "../pages/members";
 import BankomatdanIstifadeQaydalari from "../pages/xidmetlerPages/bankomatdanİstifade";
+import ElilliyinTeyinOlunmasi from "../pages/elillik/elilliyinTeyinOlunmasi";
+import UmumiMelumat from "../pages/elillik/umumiMelumat";
+import BeynelxalqGunler from "../pages/elillik/beynelxalqGunler";
+import SosialMuavinet from "../pages/elillik/sosialMuavinet";
+import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
+import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 
 const ROUTES = [
   {
@@ -60,6 +66,30 @@ const ROUTES = [
       {
         path: "xidmetler/sosialxidmetmuessiseleri",
         element: <SosialXidmetMuessiseleri />,
+      },
+      {
+        path: "elillik/umumimelumat",
+        element: <UmumiMelumat />,
+      },
+      {
+        path: "elillik/elilliyinteyinolunmasi",
+        element: <ElilliyinTeyinOlunmasi />,
+      },
+      {
+        path: "elillik/beynelxalqgunler",
+        element: <BeynelxalqGunler />,
+      },
+      {
+        path: "elillik/sosialmuavinet",
+        element: <SosialMuavinet />,
+      },
+      {
+        path: "elillik/dsmfseherverayonsobeleri",
+        element: <SeherVeRayonSobeleri />,
+      },
+      {
+        path: "elillik/emekpensiyalari",
+        element: <EmekPensiyalari />,
       },
       {
         path: "*",
