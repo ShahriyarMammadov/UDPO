@@ -17,6 +17,7 @@ import BeynelxalqGunler from "../pages/elillik/beynelxalqGunler";
 import SosialMuavinet from "../pages/elillik/sosialMuavinet";
 import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
+import NewsDetail from "../pages/newsDetail";
 
 const ROUTES = [
   {
@@ -30,6 +31,10 @@ const ROUTES = [
       {
         path: "xeberler",
         element: <NewsPage />,
+      },
+      {
+        path: "xeberler/:id",
+        element: <NewsDetail />,
       },
       {
         path: "members",
