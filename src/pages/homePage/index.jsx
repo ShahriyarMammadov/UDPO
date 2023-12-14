@@ -5,6 +5,7 @@ import NewsComponent from "../../components/news";
 import ColleaguesComponent from "../../components/collegausCarousel";
 import RequestComponent from "../../components/request-sorgu";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   useEffect(() => {
@@ -26,22 +27,40 @@ const HomePage = () => {
         <div className="container">
           <h1>Göstərilən Xidmətlər</h1>
           <div className="servicesCards">
-            <a href="#" className="card">
+            <Link to={"/xidmetler/berpavemualicemerkezleri"} className="card">
               <i className="fa-regular fa-hospital"></i>
               <div className="serviceName">Bərpa və Müalicə Müəssisələri</div>
-            </a>
-            <a href="#" className="card">
+            </Link>
+            <Link to={"/xidmetler/unvanlisosialyardim"} className="card">
               <i className="fa-regular fa-credit-card"></i>
               <div className="serviceName">Ünvanlı Sosial Yardım</div>
-            </a>
-            <a href="#" className="card">
+            </Link>
+            <Link to={"/xidmetler/mualice"} className="card">
               <i className="fa-solid fa-hand-holding-medical"></i>
               <div className="serviceName">Müalicə</div>
-            </a>
-            <a href="#" className="card">
-              <i className="fa-solid fa-truck-medical"></i>
-              <div className="serviceName">Sanatoriya Kurort Yollanışı</div>
-            </a>
+            </Link>
+            <Link to={"/elillik/elilliyinteyinolunmasi"} className="card">
+              <i className="fa-solid fa-wheelchair"></i>
+              <div className="serviceName">Əlilliyin Təyin Olunması</div>
+            </Link>
+            <Link to={"/elillik/sosialmuavinet"} className="card">
+              <i className="fa-regular fa-lightbulb"></i>
+              <div className="serviceName">Sosial Müavinət</div>
+            </Link>
+            <Link to={"/xidmetler/reabilitasiyaavadanliqlari"} className="card">
+              <i className="fa-solid fa-stethoscope"></i>
+              <div className="serviceName">Reabilitasiya Avadanlıqları</div>
+            </Link>
+            <Link to={"/xidmetler/muavinetveteqaud"} className="card pad">
+              <i className="fa-regular fa-handshake"></i>
+              <div className="serviceName">
+                Müavinət və təqaüdlərin təyin olunması
+              </div>
+            </Link>
+            <Link to={"/elillik/emekpensiyalari"} className="card">
+              <i className="fa-regular fa-credit-card"></i>
+              <div className="serviceName">Əmək Pensiyaları</div>
+            </Link>
           </div>
         </div>
       </section>
@@ -64,6 +83,12 @@ const HomePage = () => {
 
       <section id="section4" className="news">
         <NewsComponent />
+        <div className="container">
+          {" "}
+          <Link to={"/xeberler"} className="moreNewsBtn">
+            BÜTÜN XƏBƏRLƏR <i className="fa-solid fa-caret-right"></i>
+          </Link>
+        </div>
       </section>
 
       <section id="section5" className="colleagues">

@@ -487,6 +487,14 @@ const Header = () => {
                   <div className="text">REABİLİTASİYA AVADANLIQLARI</div>
                 </NavLink>
                 <NavLink
+                  to={"/xidmetler/muavinetveteqaud"}
+                  title="Visitor Analytics"
+                >
+                  <div className="text">
+                    MÜAVİNƏT VƏ TƏQAÜDLƏRİN TƏYİN OLUNMASI
+                  </div>
+                </NavLink>
+                <NavLink
                   to={"/xidmetler/sosialxidmetmuessiseleri"}
                   title="Visitor Analytics"
                 >

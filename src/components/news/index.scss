@@ -3,28 +3,6 @@
 
     .container {
 
-        .moreNewsBtn {
-            display: block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #183D3D;
-            font-weight: 300;
-            width: fit-content;
-            transition: all 0.5s;
-
-            i {
-                transition: all 0.5s;
-            }
-
-            &:hover {
-                color: #1876c9;
-
-                i {
-                    padding-left: 10px;
-                }
-            }
-        }
-
         @media only screen and (max-width: 900px) {
             .newsCards {
                 a {
@@ -126,6 +104,28 @@
                     width: 100%;
                 }
             }
+        }
+    }
+}
+
+.moreNewsBtn {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #183D3D;
+    font-weight: 300;
+    width: fit-content;
+    transition: all 0.5s;
+
+    i {
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        color: #1876c9;
+
+        i {
+            padding-left: 10px;
         }
     }
 }

@@ -29,7 +29,7 @@ const NewsComponent = () => {
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
               <img
-              src="https://www.qht.az/Images/original/ef2b9f38a48a4982aa85f19aa1e1db059102023454764.jpg"
+                src="https://www.qht.az/Images/original/ef2b9f38a48a4982aa85f19aa1e1db059102023454764.jpg"
                 alt="News"
               />
               <p>Bu gunlerde</p>
@@ -46,10 +46,7 @@ const NewsComponent = () => {
           </Link>
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
-              <img
-              src="http://udpo.az/uploads/dim3.jpg"
-                alt="News"
-              />
+              <img src="http://udpo.az/uploads/dim3.jpg" alt="News" />
               <p>Bu gunlerde</p>
             </div>
           </Link>
@@ -64,10 +61,7 @@ const NewsComponent = () => {
           </Link>
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
-              <img
-              src="http://udpo.az/uploads/dim3.jpg"
-                alt="News"
-              />
+              <img src="http://udpo.az/uploads/dim3.jpg" alt="News" />
               <p>Bu gunlerde</p>
             </div>
           </Link>
@@ -82,10 +76,7 @@ const NewsComponent = () => {
           </Link>
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
-              <img
-              src="http://udpo.az/uploads/sax.jpeg"
-                alt="News"
-              />
+              <img src="http://udpo.az/uploads/sax.jpeg" alt="News" />
               <p>Bu gunlerde</p>
             </div>
           </Link>
@@ -100,10 +91,7 @@ const NewsComponent = () => {
           </Link>
           <Link to={"/xeber"} className="newsCard">
             <div className="image">
-              <img
-              src="http://udpo.az/uploads/sax.jpeg"
-                alt="News"
-              />
+              <img src="http://udpo.az/uploads/sax.jpeg" alt="News" />
               <p>Bu gunlerde</p>
             </div>
           </Link>
@@ -117,10 +105,6 @@ const NewsComponent = () => {
             </div>
           </Link>
         </div>
-
-        <Link to={"/xeberler"} className="moreNewsBtn">
-          BÜTÜN XƏBƏRLƏR <i className="fa-solid fa-caret-right"></i>
-        </Link>
       </div>
     </div>
   );
