@@ -600,14 +600,14 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/qalereya/fotoqaleri"} className="parent">
                 QALEREYA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                <NavLink to={"/qalereya/fotoqaleri"} title="Video Qalereya">
                   <div className="text">VİDEO QALEREYA</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                <NavLink to={"/qalereya/fotoqaleri"} title="Foto Qalereya">
                   <div className="text">FOTO QALEREYA</div>
                 </NavLink>
               </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.scss";
 import { useParams } from "react-router-dom";
 import SiteNavigation from "../../components/navigation";
@@ -6,6 +6,10 @@ import { Image } from "antd";
 
 const NewsDetail = () => {
   const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div id="newsDetail">

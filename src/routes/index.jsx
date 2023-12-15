@@ -18,6 +18,7 @@ import SosialMuavinet from "../pages/elillik/sosialMuavinet";
 import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 import NewsDetail from "../pages/newsDetail";
+import PhotoGallery from "../pages/qalereya/fotoQalereya";
 
 const ROUTES = [
   {
@@ -95,6 +96,10 @@ const ROUTES = [
       {
         path: "elillik/emekpensiyalari",
         element: <EmekPensiyalari />,
+      },
+      {
+        path: "qalereya/fotoqaleri",
+        element: <PhotoGallery />,
       },
       {
         path: "*",
