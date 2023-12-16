@@ -19,6 +19,7 @@ import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 import NewsDetail from "../pages/newsDetail";
 import PhotoGallery from "../pages/qalereya/fotoQalereya";
+import Contactpage from "../pages/elaqe";
 
 const ROUTES = [
   {
@@ -100,6 +101,10 @@ const ROUTES = [
       {
         path: "qalereya/fotoqaleri",
         element: <PhotoGallery />,
+      },
+      {
+        path: "elaqe",
+        element: <Contactpage />,
       },
       {
         path: "*",

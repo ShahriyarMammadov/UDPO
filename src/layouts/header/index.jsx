@@ -620,7 +620,7 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"elaqe"} className="parent" title="Əlaqə">
                 ƏLAQƏ
               </NavLink>
             </div>
