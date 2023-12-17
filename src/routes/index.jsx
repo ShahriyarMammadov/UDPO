@@ -20,6 +20,7 @@ import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 import NewsDetail from "../pages/newsDetail";
 import PhotoGallery from "../pages/qalereya/fotoQalereya";
 import Contactpage from "../pages/elaqe";
+import QonaqKitabi from "../pages/qonaqKitabi";
 
 const ROUTES = [
   {
@@ -105,6 +106,10 @@ const ROUTES = [
       {
         path: "elaqe",
         element: <Contactpage />,
+      },
+      {
+        path: "qonaqkitabi",
+        element: <QonaqKitabi />,
       },
       {
         path: "*",

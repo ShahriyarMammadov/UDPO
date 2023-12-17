@@ -344,7 +344,7 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"/qonaqkitabi"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -359,7 +359,7 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"elaqe"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -614,7 +614,7 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/qonaqkitabi"} className="parent">
                 QONAQ KİTABI
               </NavLink>
             </div>
