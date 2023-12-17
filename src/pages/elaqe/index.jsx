@@ -37,7 +37,7 @@ const Contactpage = () => {
           ></iframe>
         </div>
 
-        <ContactMe />
+        <ContactMe text={"Bizə Müraciət"} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import ContacMe from "../../components/contactMe";
+import ContactMe from "../../components/contactMe";
 import { Avatar, Empty } from "antd";
 
 const QonaqKitabi = () => {
@@ -22,7 +22,7 @@ const QonaqKitabi = () => {
 
   return (
     <div style={{ margin: "40px 0" }}>
-      <ContacMe />
+      <ContactMe text={"Qeydlərinizi Əlavə Edin"} />
 
       <div className="container" style={{ padding: "0 10px" }}>
         <h3>Yazılmış Qeydlər:</h3>

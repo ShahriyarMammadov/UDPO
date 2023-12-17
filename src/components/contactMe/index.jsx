@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import { Button, Form, Input } from "antd";
 
-const ContactMe = () => {
+const ContactMe = ({ text }) => {
   const layout = {
     labelCol: {
       span: 4,
@@ -30,7 +30,7 @@ const ContactMe = () => {
   return (
     <div id="contactMeComponent">
       <div className="container">
-        <h2>Bizə Müraciət</h2>
+        <h2>{text}</h2>
 
         <div className="form">
           <Form
