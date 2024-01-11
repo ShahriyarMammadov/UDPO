@@ -20,7 +20,7 @@ const SiteNavigation = ({ navigationData }) => {
         {
           title: (
             <>
-              <Link to={"/xidmetler"}>{navigationData?.category}</Link>
+              <Link to={"/xidmetle"}>{navigationData?.category}</Link>
             </>
           ),
         },

@@ -1,6 +1,7 @@
 import React from "react";
 import ContactMe from "../../components/contactMe";
 import { Avatar, Empty } from "antd";
+import "./index.scss";
 
 const QonaqKitabi = () => {
   const fakeData = [
@@ -21,7 +22,7 @@ const QonaqKitabi = () => {
   ];
 
   return (
-    <div style={{ margin: "40px 0" }}>
+    <div id="qonaqKitabi" style={{ margin: "40px 0" }}>
       <ContactMe text={"Qeydlərinizi Əlavə Edin"} />
 
       <div className="container" style={{ padding: "0 10px" }}>

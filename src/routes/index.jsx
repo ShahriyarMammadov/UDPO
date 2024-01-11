@@ -1,5 +1,4 @@
 import NotFound from "../components/notFound";
-import AdminRoot from "../components/root/admin";
 import MainRoot from "../components/root/site";
 import HomePage from "../pages/homePage";
 import NewsPage from "../pages/newsPage";
@@ -19,7 +18,6 @@ import SosialMuavinet from "../pages/elillik/sosialMuavinet";
 import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 import CariProject from "../pages/cariProject";
-
 import NewsDetail from "../pages/newsDetail";
 import PhotoGallery from "../pages/qalereya/fotoQalereya";
 import Contactpage from "../pages/elaqe";
@@ -35,24 +33,22 @@ const ROUTES = [
         element: <HomePage />,
       },
       {
-        path: "/haqqimizda/xeberler",
+        path: "/xeberler",
         element: <NewsPage />,
       },
       {
-
         path: "/haqqimizda/bizkimik",
         element: <BizKimik />,
       },
       {
         path: "/haqqimizda/members",
-
+        element: <Members />
+      },
+      {
         path: "xeberler/:id",
         element: <NewsDetail />,
       },
-      {
-        path: "members",
-        element: <Members />,
-      },
+  
       {
         path: "xidmetler/berpavemualicemerkezleri",
         element: <BerpaVeMualiceMerkezleri />,
@@ -112,6 +108,8 @@ const ROUTES = [
       {
         path: "layiheler/cariproject",
         element: <CariProject />,
+      },
+      {
         path: "qalereya/fotoqaleri",
         element: <PhotoGallery />,
       },
@@ -126,20 +124,6 @@ const ROUTES = [
       {
         path: "*",
         element: <NotFound />,
-      },
-    ],
-  },
-  {
-    path: "/admin/",
-    element: <AdminRoot />,
-    children: [
-      {
-        path: "adminData/:id",
-        // element: <DashBoard />,
-      },
-      {
-        path: "user/",
-        // element: <AboutMePage />,
       },
     ],
   },

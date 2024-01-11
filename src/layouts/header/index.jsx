@@ -571,7 +571,7 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/qht"} className="parent">
                 QHT <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
