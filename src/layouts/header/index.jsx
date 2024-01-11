@@ -430,10 +430,10 @@ const Header = () => {
                 HAQQIMIZDA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                <NavLink to={"/haqqimizda/bizkimik"} title="bizkimik">
                   <div className="text">BİZ KİMİK</div>
                 </NavLink>
-                <NavLink to={"/members"} title="Terminlər">
+                <NavLink to={"/haqqimizda/members"} title="members">
                   <div className="text">ÜZVLƏR</div>
                 </NavLink>
                 <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">

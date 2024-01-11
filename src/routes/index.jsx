@@ -9,6 +9,7 @@ import QaynarXettler from "../pages/xidmetlerPages/qaynarXettler";
 import ReabilitasiyaAvadanliqlari from "../pages/xidmetlerPages/reabilitasiyaAvadanliqlari";
 import SosialXidmetMuessiseleri from "../pages/xidmetlerPages/sosialXidmetMuessiseleri";
 import UnvanliSosialYardim from "../pages/xidmetlerPages/unvanliSosialYardim";
+import BizKimik from "../pages/bizKimik";
 import Members from "../pages/members";
 import BankomatdanIstifadeQaydalari from "../pages/xidmetlerPages/bankomatdanİstifade";
 import ElilliyinTeyinOlunmasi from "../pages/elillik/elilliyinTeyinOlunmasi";
@@ -17,6 +18,8 @@ import BeynelxalqGunler from "../pages/elillik/beynelxalqGunler";
 import SosialMuavinet from "../pages/elillik/sosialMuavinet";
 import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
+import CariProject from "../pages/cariProject";
+
 
 const ROUTES = [
   {
@@ -28,11 +31,15 @@ const ROUTES = [
         element: <HomePage />,
       },
       {
-        path: "xeberler",
+        path: "/haqqimizda/xeberler",
         element: <NewsPage />,
       },
       {
-        path: "members",
+        path: "/haqqimizda/bizkimik",
+        element: <BizKimik />,
+      },
+      {
+        path: "/haqqimizda/members",
         element: <Members />,
       },
       {
@@ -90,6 +97,10 @@ const ROUTES = [
       {
         path: "elillik/emekpensiyalari",
         element: <EmekPensiyalari />,
+      },
+      {
+        path: "layiheler/cariproject",
+        element: <CariProject />,
       },
       {
         path: "*",

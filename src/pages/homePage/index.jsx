@@ -5,6 +5,7 @@ import NewsComponent from "../../components/news";
 import ColleaguesComponent from "../../components/collegausCarousel";
 import RequestComponent from "../../components/request-sorgu";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   useEffect(() => {
@@ -50,7 +51,7 @@ const HomePage = () => {
         <div className="container">
           <h1>Layihələr</h1>
           <div className="projectsCards">
-            <a href="#" className="card">
+            <a href="/layiheler/cariproject" className="card">
               <i class="fa-solid fa-bolt"></i>
               <p>Cari</p>
             </a>
@@ -72,6 +73,16 @@ const HomePage = () => {
 
       <section id="section6" className="request">
         <RequestComponent />
+      </section>
+
+      <section id="section7">
+        <div className="container">
+          <p>Köhnə vebsayıta keçid</p>
+
+          <a href="https://udpo.az" target="_blank">
+            Keçid edin
+            </a>
+        </div>
       </section>
     </main>
   );
