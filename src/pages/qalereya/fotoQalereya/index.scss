@@ -1,0 +1,36 @@
+#photoGallery {
+
+    .grid-container {
+        position: relative;
+        columns: 3 200px;
+        column-gap: 1.5rem;
+        width: 100%;
+        padding: 60px 10px;
+
+        .ant-image {
+            margin: 0 0 1.5rem 0;
+            display: inline-block;
+            width: 100%;
+            border: solid 2px black;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            overflow: hidden;
+
+            &:hover {
+                border-color: #1876c9;
+            }
+        }
+
+        h5 {
+            background-color: red;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            font-weight: 200;
+            color: #252525;
+            line-height: 26.4px;
+            letter-spacing: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -344,7 +344,7 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"/qonaqkitabi"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -359,7 +359,7 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"elaqe"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -487,6 +487,14 @@ const Header = () => {
                   <div className="text">REABİLİTASİYA AVADANLIQLARI</div>
                 </NavLink>
                 <NavLink
+                  to={"/xidmetler/muavinetveteqaud"}
+                  title="Visitor Analytics"
+                >
+                  <div className="text">
+                    MÜAVİNƏT VƏ TƏQAÜDLƏRİN TƏYİN OLUNMASI
+                  </div>
+                </NavLink>
+                <NavLink
                   to={"/xidmetler/sosialxidmetmuessiseleri"}
                   title="Visitor Analytics"
                 >
@@ -592,27 +600,27 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/qalereya/fotoqaleri"} className="parent">
                 QALEREYA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
-                <NavLink to={"/haqqimizda/zemanet"} title="Zəmanət">
+                <NavLink to={"/qalereya/fotoqaleri"} title="Video Qalereya">
                   <div className="text">VİDEO QALEREYA</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/musteri_xidmeti"} title="Terminlər">
+                <NavLink to={"/qalereya/fotoqaleri"} title="Foto Qalereya">
                   <div className="text">FOTO QALEREYA</div>
                 </NavLink>
               </div>
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"/qonaqkitabi"} className="parent">
                 QONAQ KİTABI
               </NavLink>
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent">
+              <NavLink to={"elaqe"} className="parent" title="Əlaqə">
                 ƏLAQƏ
               </NavLink>
             </div>

@@ -1,0 +1,16 @@
+#newsDetail {
+    padding: 1rem 10px 4rem 10px;
+
+    .newsImage {
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .newsText {
+        margin-top: 40px;
+    }
+}

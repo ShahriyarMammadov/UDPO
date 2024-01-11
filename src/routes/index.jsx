@@ -20,6 +20,10 @@ import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
 import CariProject from "../pages/cariProject";
 
+import NewsDetail from "../pages/newsDetail";
+import PhotoGallery from "../pages/qalereya/fotoQalereya";
+import Contactpage from "../pages/elaqe";
+import QonaqKitabi from "../pages/qonaqKitabi";
 
 const ROUTES = [
   {
@@ -35,11 +39,18 @@ const ROUTES = [
         element: <NewsPage />,
       },
       {
+
         path: "/haqqimizda/bizkimik",
         element: <BizKimik />,
       },
       {
         path: "/haqqimizda/members",
+
+        path: "xeberler/:id",
+        element: <NewsDetail />,
+      },
+      {
+        path: "members",
         element: <Members />,
       },
       {
@@ -101,6 +112,16 @@ const ROUTES = [
       {
         path: "layiheler/cariproject",
         element: <CariProject />,
+        path: "qalereya/fotoqaleri",
+        element: <PhotoGallery />,
+      },
+      {
+        path: "elaqe",
+        element: <Contactpage />,
+      },
+      {
+        path: "qonaqkitabi",
+        element: <QonaqKitabi />,
       },
       {
         path: "*",
