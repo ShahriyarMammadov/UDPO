@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./index.scss";
 import CarouselComponent from "../../components/carousel";
 import NewsComponent from "../../components/news";
@@ -8,9 +8,9 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main>
@@ -101,11 +101,11 @@ const HomePage = () => {
 
       <section id="section7">
         <div className="container">
-          <p>Köhnə vebsayıta keçid</p>
+          <p>Köhnə vebsayta keçid</p>
 
           <a href="https://udpo.az" target="_blank">
             Keçid edin
-            </a>
+          </a>
         </div>
       </section>
     </main>

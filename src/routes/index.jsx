@@ -22,6 +22,7 @@ import NewsDetail from "../pages/newsDetail";
 import PhotoGallery from "../pages/qalereya/fotoQalereya";
 import Contactpage from "../pages/elaqe";
 import QonaqKitabi from "../pages/qonaqKitabi";
+import XidmetlerPage from "../pages/xidmetlerPages";
 
 const ROUTES = [
   {
@@ -42,13 +43,16 @@ const ROUTES = [
       },
       {
         path: "/haqqimizda/members",
-        element: <Members />
+        element: <Members />,
       },
       {
         path: "xeberler/:id",
         element: <NewsDetail />,
       },
-  
+      {
+        path: "xidmetler",
+        element: <XidmetlerPage />,
+      },
       {
         path: "xidmetler/berpavemualicemerkezleri",
         element: <BerpaVeMualiceMerkezleri />,

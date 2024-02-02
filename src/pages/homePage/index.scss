@@ -95,7 +95,6 @@ main {
 
 
         }
-
     }
 
     #section3 {
@@ -185,11 +184,11 @@ main {
         margin-top: 2rem;
     }
 
-    #section7{
+    #section7 {
         text-align: center;
         padding: 0 10px 20px 10px;
 
-        a{
+        a {
             color: #422800;
             border: 2px solid #422800;
             border-radius: 10px;
@@ -198,10 +197,11 @@ main {
             font-weight: 800;
             font-size: 14px;
             cursor: pointer;
+
             &:hover {
                 background-color: #fff;
             }
-        
+
         }
     }
 }

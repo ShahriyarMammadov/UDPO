@@ -1,0 +1,91 @@
+#xidmetlerPage {
+    .container {
+        padding-top: 30px;
+
+        .servicesCards {
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+            padding-bottom: 60px;
+
+            a {
+                text-decoration: none;
+                transition: all 0.5s;
+                min-width: 240px;
+
+                &.card {
+                    margin-top: 10px;
+                    width: 24%;
+                    height: 180px;
+                    padding: 40px 30px;
+                    color: #1876c9;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+                    text-align: center;
+
+                    i {
+                        font-size: 35px;
+                        padding: 0 0 15px 0;
+                    }
+
+                    &:hover {
+                        background-color: #1876c9;
+                        color: #f1efef;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1014px) {
+            .servicesCards {
+                justify-content: space-evenly;
+
+                a {
+                    min-width: 300px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 630px) {
+            .servicesCards {
+                flex-direction: column;
+
+                a {
+
+                    &.card {
+                        width: 100%;
+                        height: 280px;
+                        padding: 75px 30px;
+                        font-size: 24px;
+
+                        i {
+                            font-size: 70px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .servicesCards {
+                a {
+                    &.card {
+                        width: 100%;
+                        height: 210px;
+                        padding: 50px 30px;
+                        font-size: 20px;
+
+                        i {
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
