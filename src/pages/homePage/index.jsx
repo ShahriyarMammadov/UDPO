@@ -27,13 +27,12 @@ const HomePage = () => {
       const newsData = await axios.get(
         "https://udpobackend-production.up.railway.app/news/allNews"
       );
+      setNewsData(newsData?.data);
 
-      setNewsData(newsData?.data?.data);
-
-      setLoading(false);
+      // setLoading(false);
     } catch (error) {
       setLoading(false);
-      console.log(error?.response?.data);
+      console.log(error);
     }
   };
 
@@ -107,7 +106,7 @@ const HomePage = () => {
       </section>
 
       <section id="section4" className="news">
-        <NewsComponent data={newsData} />
+        <NewsComponent newsData={newsData} />
         <div className="container">
           {" "}
           <Link to={"/xeberler"} className="moreNewsBtn">

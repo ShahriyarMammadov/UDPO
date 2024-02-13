@@ -2,13 +2,15 @@ import React from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
 
-const NewsComponent = ({ data }) => {
+const NewsComponent = ({ newsData }) => {
+  // console.log("news", newsDatas);
+
   return (
     <div id="newsComponent">
       <div className="container">
         <h1>Xəbərlər</h1>
         <div className="newsCards">
-          {data?.map((e, i) => {
+          {newsData?.map((e, i) => {
             return (
               <Link
                 to={`/xeberler/${e?.name}`}
@@ -20,7 +22,7 @@ const NewsComponent = ({ data }) => {
                     src={`https://udpobackend-production.up.railway.app/images/${e?.coverImage}`}
                     alt={e?.name}
                   />
-                  <p dangerouslySetInnerHTML={{ __html: e?.text }}></p>
+                  <p>{e?.name?.slice(0, 32)}...</p>
                 </div>
               </Link>
             );
