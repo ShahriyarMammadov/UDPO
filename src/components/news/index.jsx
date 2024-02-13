@@ -13,7 +13,7 @@ const NewsComponent = ({ newsData }) => {
           {newsData?.map((e, i) => {
             return (
               <Link
-                to={`/xeberler/${e?.name}`}
+                to={`/xeberler/${e?._id}`}
                 className="newsCard"
                 key={e?._id}
               >

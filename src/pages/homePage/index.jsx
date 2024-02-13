@@ -7,6 +7,7 @@ import RequestComponent from "../../components/request-sorgu";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Spin } from "antd";
 
 const HomePage = () => {
   const [selectedNewsData, setSelectedNewsData] = useState([]);
@@ -29,7 +30,7 @@ const HomePage = () => {
       );
       setNewsData(newsData?.data);
 
-      // setLoading(false);
+      setLoading(false);
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -44,7 +45,20 @@ const HomePage = () => {
       </Helmet>
 
       <section id="section1" className="news carousel">
-        <CarouselComponent data={selectedNewsData} />
+        {loading ? (
+          <Spin
+            size="large"
+            style={{
+              width: "100%",
+              height: "400px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          />
+        ) : (
+          <CarouselComponent data={selectedNewsData} />
+        )}
       </section>
 
       <section id="section2" className="services">
@@ -106,9 +120,22 @@ const HomePage = () => {
       </section>
 
       <section id="section4" className="news">
-        <NewsComponent newsData={newsData} />
+        {loading ? (
+          <Spin
+            size="large"
+            style={{
+              width: "100%",
+              height: "400px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          />
+        ) : (
+          <NewsComponent newsData={newsData} />
+        )}
+
         <div className="container">
-          {" "}
           <Link to={"/xeberler"} className="moreNewsBtn">
             BÜTÜN XƏBƏRLƏR <i className="fa-solid fa-caret-right"></i>
           </Link>

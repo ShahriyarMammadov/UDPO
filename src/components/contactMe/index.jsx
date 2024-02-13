@@ -23,9 +23,9 @@ const ContactMe = ({ text }) => {
     },
   };
 
-  const onFinish = (values) => {
-    console.log(values);
-  };
+  // const onFinish = (values) => {
+  //   console.log(values);
+  // };
 
   return (
     <div id="contactMeComponent">

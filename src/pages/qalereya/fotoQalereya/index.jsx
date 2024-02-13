@@ -1,48 +1,76 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
-import { Image } from "antd";
+import { Image, Spin, Typography } from "antd";
+import axios from "axios";
 
 const PhotoGallery = () => {
-  const data = [
-    {
-      url: "https://armariumbackend-production.up.railway.app/images/coverImage-1702040286560-535097244.jpg",
-      name: "teasgdyasyu a;slfm",
-    },
-    {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&usqp=CAU",
-      name: "teasgdyasyu a;slfm",
-    },
-    {
-      url: "https://armariumbackend-production.up.railway.app/images/coverImage-1702040286560-535097244.jpg",
-      name: "teasgdyasyu a;slfm",
-    },
-    {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Velb4WTMSb5h9nXcIbiwhbsWe-dQXswwFg&usqp=CAU",
-      name: "teasgdyasyu a;slfm",
-    },
-    {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Velb4WTMSb5h9nXcIbiwhbsWe-dQXswwFg&usqp=CAU",
-      name: "teasgdyasyu a;slfm",
-    },
-    {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&usqp=CAU",
-      name: "teasgdyasyu a;slfm",
-    },
-  ];
+  const [allData, setAllData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { Text } = Typography;
+
+  useEffect(() => {
+    getPhotoGalleryData();
+  }, []);
+
+  const getPhotoGalleryData = async () => {
+    try {
+      const { data } = await axios.get(
+        `https://udpobackend-production.up.railway.app/gallery/getAllGallery`
+      );
+      setAllData(data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
 
   return (
     <div id="photoGallery">
       <div className="grid-container container">
-        <Image.PreviewGroup
-          preview={{
-            onChange: (current, prev) =>
-              console.log(`current index: ${current}, prev index: ${prev}`),
-          }}
-        >
-          {data?.map((e, i) => {
-            return <Image key={i} src={e?.url} />;
-          })}
-        </Image.PreviewGroup>
+        {loading ? (
+          <Spin
+            size="large"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+              height: "70vh",
+            }}
+          />
+        ) : (
+          allData?.map((e, i) => {
+            const imageUrls = e?.images?.map(
+              (image) =>
+                `https://udpobackend-production.up.railway.app/images/${image}`
+            );
+            return (
+              <>
+                <div style={{ position: "relative" }}>
+                  <Image.PreviewGroup items={imageUrls} key={i}>
+                    <Image
+                      src={`https://udpobackend-production.up.railway.app/images/${e?.coverImage}`}
+                    />
+                  </Image.PreviewGroup>
+                  <Text
+                    style={{
+                      position: "absolute",
+                      top: "20px",
+                      right: "20px",
+                      color: "white",
+                      fontWeight: "bold",
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
+                      padding: "6px 10px",
+                    }}
+                  >
+                    {e?.name?.length > 86 ? e?.name?.slice(0, 87) : e?.name}
+                  </Text>
+                </div>
+              </>
+            );
+          })
+        )}
       </div>
     </div>
   );

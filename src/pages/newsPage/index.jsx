@@ -1,101 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { Helmet } from "react-helmet";
 import SiteNavigation from "../../components/navigation";
-import { Pagination } from "antd";
+import { Pagination, Spin } from "antd";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const NewsPage = () => {
+  const [newsData, setNewsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    getAllNews();
   }, []);
 
-  const fakeData = [
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "“Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”",
-      text: "“Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-    {
-      name: "12 dekabr Ümumilli lider Heydər Əliyevin anım günüdür.",
-      text: "2023-cü il beynəlxalq əlillliyi olan şəxslər gününün mövzusu: “Əlilliyi olan şəxslərlə birlikdə və əlilliyi olan şəxslər tərəfindən DİM-ləri xilas etmək və onlara nail olmaq üçün fəaliyyətdə birləşək”. Mövzu 2015-ci ildən bəri Birləşmiş Millətlər Təşkilatına üzv dövlətlər tərəfindən qəbul edilən Dayanıqlı İnkişaf Məqsədləri (SDGs) üzrə 2030 Gündəliyinə diqqət yetirir.",
-      coverImage: "https://udpo.az/uploads/h%C9%99.jpg",
-      date: "14.12.2023",
-      id: "465as4d9a79",
-    },
-  ];
+  const getAllNews = async (tabIndex = 1) => {
+    console.log(tabIndex);
+    try {
+      const { data } = await axios.get(
+        `https://udpobackend-production.up.railway.app/news/allNews`
+      );
+
+      setNewsData(data);
+
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
 
   return (
     <div id="newsPage">
@@ -107,31 +40,52 @@ const NewsPage = () => {
         <SiteNavigation
           navigationData={{
             category: "Xəbərlər",
-            subcategory: "",
+            subcategory: "Bütün Xəbərlər",
           }}
         />
 
         <div className="allNews">
-          {fakeData?.map((e, i) => {
-            return (
-              <Link to={`/xeberler/${e.id}`} className="newsCard" key={i}>
-                <img src={e?.coverImage} alt={e?.name} />
-                <p>{e?.date}</p>
-                <h4>{e?.name}</h4>
-              </Link>
-            );
-          })}
+          {loading ? (
+            <Spin
+              size="large"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: "60vh",
+              }}
+            />
+          ) : (
+            newsData?.map((e, i) => {
+              return (
+                <Link to={`/xeberler/${e._id}`} className="newsCard" key={i}>
+                  <img
+                    src={`https://udpobackend-production.up.railway.app/images/${e?.coverImage}`}
+                    alt={e?.name}
+                  />
+                  <p>{e?.date?.slice(0, 10)?.replaceAll("-", ".")}</p>
+                  <h4>
+                    {e?.name?.length > 41
+                      ? e?.name?.slice(0, 41) + "..."
+                      : e?.name}
+                  </h4>
+                </Link>
+              );
+            })
+          )}
         </div>
 
         <Pagination
           responsive={true}
           onChange={(page, pageSize) => {
-            console.log(page, pageSize);
+            getAllNews(page);
+            console.log(pageSize);
           }}
-          total={85}
-          showSizeChanger
+          total={newsData?.length}
+          // showSizeChanger
           showQuickJumper
-          showTotal={(total) => `Total ${total} items`}
+          showTotal={(total) => `Bu səhifədə ümumi ${total} xəbər var`}
         />
       </div>
     </div>

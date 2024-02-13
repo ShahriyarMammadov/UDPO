@@ -604,9 +604,9 @@ const Header = () => {
                 QALEREYA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
-                <NavLink to={"/qalereya/fotoqaleri"} title="Video Qalereya">
+                {/* <NavLink to={"/qalereya/fotoqaleri"} title="Video Qalereya">
                   <div className="text">VİDEO QALEREYA</div>
-                </NavLink>
+                </NavLink> */}
                 <NavLink to={"/qalereya/fotoqaleri"} title="Foto Qalereya">
                   <div className="text">FOTO QALEREYA</div>
                 </NavLink>

@@ -16,8 +16,6 @@ const RequestComponent = () => {
     }
   };
 
-  console.log(radioValue);
-
   return (
     <div id="request">
       <div className="container request">
