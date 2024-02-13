@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import CarouselComponent from "../../components/carousel";
 import NewsComponent from "../../components/news";
@@ -6,11 +6,36 @@ import ColleaguesComponent from "../../components/collegausCarousel";
 import RequestComponent from "../../components/request-sorgu";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const HomePage = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  const [selectedNewsData, setSelectedNewsData] = useState([]);
+  const [newsData, setNewsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getAllHomePageData();
+  }, []);
+
+  const getAllHomePageData = async () => {
+    try {
+      const selectedNewsData = await axios.get(
+        "https://udpobackend-production.up.railway.app/selectedNews/getAllSelectedNews"
+      );
+      setSelectedNewsData(selectedNewsData?.data?.data);
+
+      const newsData = await axios.get(
+        "https://udpobackend-production.up.railway.app/news/allNews"
+      );
+
+      setNewsData(newsData?.data?.data);
+
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      console.log(error?.response?.data);
+    }
+  };
 
   return (
     <main>
@@ -20,7 +45,7 @@ const HomePage = () => {
       </Helmet>
 
       <section id="section1" className="news carousel">
-        <CarouselComponent />
+        <CarouselComponent data={selectedNewsData} />
       </section>
 
       <section id="section2" className="services">
@@ -82,7 +107,7 @@ const HomePage = () => {
       </section>
 
       <section id="section4" className="news">
-        <NewsComponent />
+        <NewsComponent data={newsData} />
         <div className="container">
           {" "}
           <Link to={"/xeberler"} className="moreNewsBtn">
