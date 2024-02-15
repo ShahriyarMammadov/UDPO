@@ -73,21 +73,21 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"/haqqimizda/bizkimik"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Biz Kimik
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/haqqimizda/members"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Üzvlər
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/haqqimizda/fealiyyet"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -214,42 +214,42 @@ const Header = () => {
       children: (
         <>
           <NavLink
-            to={"/"}
+            to={"/elillik/umumimelumat"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Ümumi Məlumat
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/elillik/elilliyinteyinolunmasi"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Əlilliyin Təyin Olunmasə
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/elillik/emekpensiyalari"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Əmək Pensiyaları
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/elillik/beynelxalqgunler"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Sosial Müavinət
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/elillik/sosialmuavinet"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Tibbi Sosial Ekspert Mərkəzi
           </NavLink>
           <NavLink
-            to={"/"}
+            to={"/elillik/dsmfseherverayonsobeleri"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -426,7 +426,7 @@ const Header = () => {
         <div className="headerBottom">
           <nav className="container">
             <div className="dropdown">
-              <NavLink to={"/haqqimizda"} className="parent first">
+              <NavLink to={"/haqqimizda/bizkimik"} className="parent first">
                 HAQQIMIZDA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
@@ -631,7 +631,7 @@ const Header = () => {
       <Drawer
         title="UDPO.az"
         placement={placement}
-        closable={false}
+        closable={true}
         onClose={onClose}
         open={open}
         key={placement}

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.scss";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, message } from "antd";
+import axios from "axios";
 
 const ContactMe = ({ text }) => {
+  const [messageApi, contextHolder] = message.useMessage();
+  const [btnBoading, setBtnLoading] = useState(false);
+
   const layout = {
     labelCol: {
       span: 4,
@@ -23,12 +27,40 @@ const ContactMe = ({ text }) => {
     },
   };
 
-  // const onFinish = (values) => {
-  //   console.log(values);
-  // };
+  const sendWriteToUs = async (values) => {
+    console.log(values);
+    try {
+      if (
+        values?.user?.Ad?.length <= 4 ||
+        values?.user?.email?.length <= 8 ||
+        values?.user?.Telefon?.length <= 8
+      ) {
+        return messageApi.warning("Məlumatları Tam Daxil Edin");
+      }
+      setBtnLoading(true);
+
+      const { data } = await axios.post(
+        "https://udpobackend-production.up.railway.app/writeToUs/addWriteToUs",
+        {
+          fullName: values?.user?.Ad,
+          email: values?.user?.email,
+          text: values?.user?.Qeydiniz,
+          phoneNumber: values?.user?.Telefon,
+        }
+      );
+      console.log(data);
+      messageApi.success(data?.message);
+      setBtnLoading(false);
+    } catch (error) {
+      setBtnLoading(false);
+      console.log(error?.response?.data);
+    }
+  };
 
   return (
     <div id="contactMeComponent">
+      {contextHolder}
+
       <div className="container">
         <h2>{text}</h2>
 
@@ -36,7 +68,7 @@ const ContactMe = ({ text }) => {
           <Form
             {...layout}
             name="nest-messages"
-            onFinish={onFinish}
+            onFinish={sendWriteToUs}
             style={{
               maxWidth: 800,
               paddingTop: "20px",
@@ -45,7 +77,7 @@ const ContactMe = ({ text }) => {
             validateMessages={validateMessages}
           >
             <Form.Item
-              name={["user", "Ad, Soyad"]}
+              name={["user", "Ad"]}
               label="Tam Adınız"
               rules={[
                 {
@@ -69,10 +101,7 @@ const ContactMe = ({ text }) => {
               <Input />
             </Form.Item>
 
-            <Form.Item
-              name={["user", "Telefon Nömrəsi"]}
-              label="Telefon Nömrəsi"
-            >
+            <Form.Item name={["user", "Telefon"]} label="Telefon Nömrəsi">
               <Input />
             </Form.Item>
 
@@ -94,7 +123,7 @@ const ContactMe = ({ text }) => {
                 offset: 8,
               }}
             >
-              <Button type="primary" htmlType="submit">
+              <Button type="primary" htmlType="submit" loading={btnBoading}>
                 Göndər
               </Button>
             </Form.Item>
