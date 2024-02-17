@@ -22,7 +22,11 @@ const CarouselComponent = ({ data }) => {
                   className="carouselImage"
                 />
                 <div className="carouselContent">
-                  <p>{e?.name}</p>
+                  <p>
+                    {e?.name?.length > 50
+                      ? e?.name?.slice(0, 50) + " " + "...."
+                      : e?.name}
+                  </p>
                 </div>
               </Link>
             </div>
