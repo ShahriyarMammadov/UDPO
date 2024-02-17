@@ -22,7 +22,7 @@ const NewsComponent = ({ newsData }) => {
                     src={`https://udpobackend-production.up.railway.app/images/${e?.coverImage}`}
                     alt={e?.name}
                   />
-                  <p>{e?.name?.slice(0, 32)}...</p>
+                  <p>{e?.name?.slice(0, 28)}...</p>
                 </div>
               </Link>
             );

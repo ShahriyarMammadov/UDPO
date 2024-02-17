@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ContactMe from "../../components/contactMe";
-import { Avatar, Empty } from "antd";
+import { Avatar, Empty, Spin } from "antd";
 import "./index.scss";
+import axios from "axios";
 
 const QonaqKitabi = () => {
-  const fakeData = [
-    {
-      fullName: "Shahriyar Mammadov",
-      email: "shahriyarmammadov16@gmail.com",
-      phoneNumber: "+994503134473",
-      message:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    },
-    {
-      fullName: "Elman Asgarov",
-      email: "elmanasgarov@gmail.com",
-      phoneNumber: "+994554844848",
-      message:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-    },
-  ];
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    getAllData();
+  }, []);
+
+  const getAllData = async () => {
+    try {
+      const { data } = await axios.get(
+        `https://udpobackend-production.up.railway.app/qonaqKitabi/allData`
+      );
+      setData(data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error, error?.response?.data);
+      setLoading(false);
+    }
+  };
   return (
     <div id="qonaqKitabi" style={{ margin: "40px 0" }}>
       <ContactMe text={"Qeydlərinizi Əlavə Edin"} />
@@ -28,13 +31,23 @@ const QonaqKitabi = () => {
       <div className="container" style={{ padding: "0 10px" }}>
         <h3>Yazılmış Qeydlər:</h3>
 
-        {fakeData.length === 0 ? (
-          <Empty description={false} />
+        {loading ? (
+          <Spin
+            size="large"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "300px",
+            }}
+          />
+        ) : data?.length === 0 ? (
+          <Empty description={false} style={{ marginTop: "40px" }} />
         ) : (
           <div className="commentCard" style={{ margin: "10px 0" }}>
-            {fakeData?.map((e, i) => {
+            {data?.map((e, i) => {
               return (
-                <div key={i} style={{ margin: "15px 0" }}>
+                <div key={e?._id} style={{ margin: "15px 0" }}>
                   <div
                     style={{
                       display: "flex",
@@ -52,7 +65,7 @@ const QonaqKitabi = () => {
                     </h5>
                   </div>
 
-                  <p>{e?.message}</p>
+                  <p>{e?.text}</p>
                 </div>
               );
             })}

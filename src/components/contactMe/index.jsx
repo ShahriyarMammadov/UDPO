@@ -28,7 +28,6 @@ const ContactMe = ({ text }) => {
   };
 
   const sendWriteToUs = async (values) => {
-    console.log(values);
     try {
       if (
         values?.user?.Ad?.length <= 4 ||
@@ -48,7 +47,35 @@ const ContactMe = ({ text }) => {
           phoneNumber: values?.user?.Telefon,
         }
       );
-      console.log(data);
+      messageApi.success(data?.message);
+      setBtnLoading(false);
+    } catch (error) {
+      setBtnLoading(false);
+      console.log(error?.response?.data);
+    }
+  };
+
+  const addQonaqKitabi = async (values) => {
+    try {
+      if (
+        values?.user?.Ad?.length <= 4 ||
+        values?.user?.email?.length <= 8 ||
+        values?.user?.Telefon?.length <= 8
+      ) {
+        return messageApi.warning("Məlumatları Tam Daxil Edin");
+      }
+      setBtnLoading(true);
+
+      const { data } = await axios.post(
+        "https://udpobackend-production.up.railway.app/qonaqKitabi/addqonaqkitabi",
+        {
+          fullName: values?.user?.Ad,
+          email: values?.user?.email,
+          text: values?.user?.Qeydiniz,
+          phoneNumber: values?.user?.Telefon,
+        }
+      );
+
       messageApi.success(data?.message);
       setBtnLoading(false);
     } catch (error) {
@@ -68,7 +95,11 @@ const ContactMe = ({ text }) => {
           <Form
             {...layout}
             name="nest-messages"
-            onFinish={sendWriteToUs}
+            onFinish={
+              text === "Qeydlərinizi Əlavə Edin"
+                ? addQonaqKitabi
+                : sendWriteToUs
+            }
             style={{
               maxWidth: 800,
               paddingTop: "20px",

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { Helmet } from "react-helmet";
 import SiteNavigation from "../../components/navigation";
-import { Pagination, Spin } from "antd";
+import { Empty, Pagination, Spin } from "antd";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -15,20 +15,22 @@ const NewsPage = () => {
   }, []);
 
   const getAllNews = async (tabIndex = 1) => {
-    console.log(tabIndex);
     try {
+      setLoading(true);
       const { data } = await axios.get(
-        `https://udpobackend-production.up.railway.app/news/allNews`
+        `https://udpobackend-production.up.railway.app/news/withpagesize?page=${tabIndex}`
       );
 
       setNewsData(data);
 
       setLoading(false);
     } catch (error) {
-      console.log(error);
+      console.log(error?.response?.data);
       setLoading(false);
     }
   };
+
+  console.log(newsData);
 
   return (
     <div id="newsPage">
@@ -56,8 +58,13 @@ const NewsPage = () => {
                 height: "60vh",
               }}
             />
+          ) : newsData?.allNews?.length === 0 ? (
+            <Empty
+              description={false}
+              style={{ paddingTop: "150px", paddingBottom: "150px" }}
+            />
           ) : (
-            newsData?.map((e, i) => {
+            newsData?.allNews?.map((e, i) => {
               return (
                 <Link to={`/xeberler/${e._id}`} className="newsCard" key={i}>
                   <img
@@ -80,12 +87,12 @@ const NewsPage = () => {
           responsive={true}
           onChange={(page, pageSize) => {
             getAllNews(page);
-            console.log(pageSize);
           }}
-          total={newsData?.length}
+          total={newsData?.totalNewsCount}
           // showSizeChanger
-          showQuickJumper
-          showTotal={(total) => `Bu səhifədə ümumi ${total} xəbər var`}
+          // showQuickJumper
+          defaultPageSize={15}
+          showTotal={(total) => `Ümumi ${total} xəbər var`}
         />
       </div>
     </div>

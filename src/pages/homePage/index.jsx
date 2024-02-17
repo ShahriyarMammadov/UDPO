@@ -7,7 +7,7 @@ import RequestComponent from "../../components/request-sorgu";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { Spin } from "antd";
+import { Empty, Spin } from "antd";
 
 const HomePage = () => {
   const [selectedNewsData, setSelectedNewsData] = useState([]);
@@ -26,7 +26,7 @@ const HomePage = () => {
       setSelectedNewsData(selectedNewsData?.data?.data);
 
       const newsData = await axios.get(
-        "https://udpobackend-production.up.railway.app/news/allNews"
+        "https://udpobackend-production.up.railway.app/news/latest20news"
       );
       setNewsData(newsData?.data);
 
@@ -55,6 +55,11 @@ const HomePage = () => {
               alignItems: "center",
               justifyContent: "center",
             }}
+          />
+        ) : selectedNewsData.length === 0 ? (
+          <Empty
+            description={false}
+            style={{ paddingTop: "160px", paddingBottom: "160px" }}
           />
         ) : (
           <CarouselComponent data={selectedNewsData} />
@@ -131,11 +136,21 @@ const HomePage = () => {
               justifyContent: "center",
             }}
           />
+        ) : newsData?.allNews?.length === 0 ? (
+          <>
+            <h1 className="container" style={{ padding: "10px" }}>
+              Xəbərlər
+            </h1>
+            <Empty
+              description={false}
+              style={{ paddingTop: "150px", paddingBottom: "150px" }}
+            />
+          </>
         ) : (
           <NewsComponent newsData={newsData} />
         )}
 
-        <div className="container">
+        <div className="container" style={{ padding: "10px" }}>
           <Link to={"/xeberler"} className="moreNewsBtn">
             BÜTÜN XƏBƏRLƏR <i className="fa-solid fa-caret-right"></i>
           </Link>
