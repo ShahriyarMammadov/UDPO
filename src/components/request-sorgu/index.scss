@@ -1,6 +1,14 @@
 #request {
     padding: 0 10px 40px 10px;
 
+    .resultsDiv {
+        max-width: 50%;
+
+        @media only screen and (max-width: 650px) {
+            max-width: 100% !important;
+        }
+    }
+
     @media only screen and (max-width: 425px) {
         .request {
             form {
