@@ -119,35 +119,11 @@ const Header = () => {
           </NavLink>
           <NavLink
             style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/menzilleteminat"}
-            title="MƏNZİLLƏ TƏMİNAT"
-            onClick={onClose}
-          >
-            Mənzillə Təminat
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
             to={"/xidmetler/mualice"}
             title="MÜALİCƏ"
             onClick={onClose}
           >
             Müalicə
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/avtomobilleteminat"}
-            title="AVTOMOBİLLƏ TƏMİNAT"
-            onClick={onClose}
-          >
-            Avtomobillə Təminat
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/sanatoriyakurortyollanislari"}
-            title="SANATORİYA-KURORT YOLLANIŞLARI"
-            onClick={onClose}
-          >
-            Sanatoriya-Kurort Yollanışları
           </NavLink>
           <NavLink
             style={{ display: "block", marginTop: "10px" }}
@@ -167,35 +143,11 @@ const Header = () => {
           </NavLink>
           <NavLink
             style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/elektronxidmetler"}
-            title="ELEKTRON XİDMƏTLƏR"
-            onClick={onClose}
-          >
-            Elektron Xidmətlər
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
             to={"/xidmetler/BankomatdanIstifadeQaydalari"}
             title="BANKOMATDAN İSTİFADƏ QAYDALARI"
             onClick={onClose}
           >
             Bankomatdan İstifadə Qaydaları
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/menzilalanvenovbededuranlar"}
-            title="MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR"
-            onClick={onClose}
-          >
-            Mənzil Alanlar və Növbədə Duranlar
-          </NavLink>
-          <NavLink
-            style={{ display: "block", marginTop: "10px" }}
-            to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
-            title=" AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR"
-            onClick={onClose}
-          >
-            Avtomobil Alanlar və Növbədə Duranlar
           </NavLink>
           <NavLink
             style={{ display: "block", marginTop: "10px" }}
@@ -469,26 +421,14 @@ const Header = () => {
                   <div className="text">MÜALİCƏ</div>
                 </NavLink>
                 <NavLink
-                  to={"/xidmetler/avtomobilleteminat"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">AVTOMOBİLLƏ TƏMİNAT</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/sanatoriyakurortyollanislari"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">SANATORİYA-KURORT YOLLANIŞLARI</div>
-                </NavLink>
-                <NavLink
                   to={"/xidmetler/reabilitasiyaavadanliqlari"}
                   title="Visitor Analytics"
                 >
                   <div className="text">REABİLİTASİYA AVADANLIQLARI</div>
                 </NavLink>
                 <NavLink
-                  to={"/xidmetler/muavinetveteqaud"}
-                  title="Visitor Analytics"
+                  to={"/xidmetler/MuavinatveTeqaudlerinTeyinOlunmasi"}
+                  title="Muavinat və Təqaüdlərin Təyin Olunması"
                 >
                   <div className="text">
                     MÜAVİNƏT VƏ TƏQAÜDLƏRİN TƏYİN OLUNMASI
@@ -501,30 +441,10 @@ const Header = () => {
                   <div className="text">SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ</div>
                 </NavLink>
                 <NavLink
-                  to={"/xidmetler/elektronxidmetler"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">ELEKTRON XİDMƏTLƏR</div>
-                </NavLink>
-                <NavLink
                   to={"/xidmetler/BankomatdanIstifadeQaydalari"}
                   title="Visitor Analytics"
                 >
                   <div className="text">BANKOMATDAN İSTİFADƏ QAYDALARI</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/menzilalanvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">MƏNZİL ALAN VƏ NÖVBƏDƏ DURANLAR</div>
-                </NavLink>
-                <NavLink
-                  to={"/xidmetler/avtomobilalanlarvenovbededuranlar"}
-                  title="Visitor Analytics"
-                >
-                  <div className="text">
-                    AVTOMOBİL ALANLAR VƏ NÖVBƏDƏ DURANLAR
-                  </div>
                 </NavLink>
                 <NavLink to={"/xidmetler/qaynarxettler"} title="Qaynar Xəttlər">
                   <div className="text">QAYNAR XƏTTLƏR</div>
@@ -545,12 +465,6 @@ const Header = () => {
                   title="ƏLİLLİYİN TƏYİN OLUNMASI"
                 >
                   <div className="text">ƏLİLLİYİN TƏYİN OLUNMASI</div>
-                </NavLink>
-                <NavLink
-                  to={"/elillik/emekpensiyalari"}
-                  title="ƏMƏK PENSİYALARI"
-                >
-                  <div className="text">ƏMƏK PENSİYALARI</div>
                 </NavLink>
                 <NavLink
                   to={"/elillik/beynelxalqgunler"}

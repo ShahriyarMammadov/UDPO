@@ -23,6 +23,7 @@ import PhotoGallery from "../pages/qalereya/fotoQalereya";
 import Contactpage from "../pages/elaqe";
 import QonaqKitabi from "../pages/qonaqKitabi";
 import XidmetlerPage from "../pages/xidmetlerPages";
+import MuavinatveTeqaudlerinTeyinOlunmasiPage from "../pages/xidmetlerPages/MuavinatVeTeqaudlerinTeyinOlunmasi";
 
 const ROUTES = [
   {
@@ -84,6 +85,10 @@ const ROUTES = [
       {
         path: "xidmetler/sosialxidmetmuessiseleri",
         element: <SosialXidmetMuessiseleri />,
+      },
+      {
+        path: "xidmetler/MuavinatveTeqaudlerinTeyinOlunmasi",
+        element: <MuavinatveTeqaudlerinTeyinOlunmasiPage />,
       },
       {
         path: "elillik/umumimelumat",
