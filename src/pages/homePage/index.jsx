@@ -112,11 +112,11 @@ const HomePage = () => {
         <div className="container">
           <h1>Layihələr</h1>
           <div className="projectsCards">
-            <Link to="/layiheler/cariproject" className="card">
+            <Link to="/layihe/carilayiheler" className="card">
               <i class="fa-solid fa-bolt"></i>
               <p>Cari</p>
             </Link>
-            <Link to="/layiheler/cariproject" className="card">
+            <Link to="/layihe/bitmislayiheler" className="card">
               <i class="fa-solid fa-calendar-check"></i>
               <p>Bitmiş</p>
             </Link>

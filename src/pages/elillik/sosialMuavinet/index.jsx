@@ -10,7 +10,7 @@ const SosialMuavinet = () => {
           subcategory: "Sosial Müavinət",
         }}
       />
-      <h1>Sosial Muavinet</h1>
+      <h1>Sosial Muavinət</h1>
 
       <div style={{ padding: "30px 0", textAlign: "justify" }}>
         <strong>

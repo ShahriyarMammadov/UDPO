@@ -17,7 +17,6 @@ import BeynelxalqGunler from "../pages/elillik/beynelxalqGunler";
 import SosialMuavinet from "../pages/elillik/sosialMuavinet";
 import SeherVeRayonSobeleri from "../pages/elillik/seherRayonSobeleri";
 import EmekPensiyalari from "../pages/elillik/emekPensiyalari";
-import CariProject from "../pages/cariProject";
 import NewsDetail from "../pages/newsDetail";
 import PhotoGallery from "../pages/qalereya/fotoQalereya";
 import Contactpage from "../pages/elaqe";
@@ -26,6 +25,8 @@ import XidmetlerPage from "../pages/xidmetlerPages";
 import MuavinatveTeqaudlerinTeyinOlunmasiPage from "../pages/xidmetlerPages/MuavinatVeTeqaudlerinTeyinOlunmasi";
 import QhtQanunPage from "../pages/QHT/Qanun";
 import QhtTesisSenedleriPage from "../pages/QHT/TesisSenedleri";
+import BitmisLayihelerPage from "../pages/LAYIHELER/BitmisLayiheler";
+import CariLayihelerPage from "../pages/LAYIHELER/CariLayiheler";
 
 const ROUTES = [
   {
@@ -121,8 +122,12 @@ const ROUTES = [
         element: <EmekPensiyalari />,
       },
       {
-        path: "layiheler/cariproject",
-        element: <CariProject />,
+        path: "layihe/bitmislayiheler",
+        element: <BitmisLayihelerPage />,
+      },
+      {
+        path: "layihe/carilayiheler",
+        element: <CariLayihelerPage />,
       },
       {
         path: "qalereya/fotoqaleri",
