@@ -24,6 +24,8 @@ import Contactpage from "../pages/elaqe";
 import QonaqKitabi from "../pages/qonaqKitabi";
 import XidmetlerPage from "../pages/xidmetlerPages";
 import MuavinatveTeqaudlerinTeyinOlunmasiPage from "../pages/xidmetlerPages/MuavinatVeTeqaudlerinTeyinOlunmasi";
+import QhtQanunPage from "../pages/QHT/Qanun";
+import QhtTesisSenedleriPage from "../pages/QHT/TesisSenedleri";
 
 const ROUTES = [
   {
@@ -91,8 +93,12 @@ const ROUTES = [
         element: <MuavinatveTeqaudlerinTeyinOlunmasiPage />,
       },
       {
-        path: "elillik/umumimelumat",
-        element: <UmumiMelumat />,
+        path: "qht/qanun",
+        element: <QhtQanunPage />,
+      },
+      {
+        path: "qht/tesissenedleri",
+        element: <QhtTesisSenedleriPage />,
       },
       {
         path: "elillik/elilliyinteyinolunmasi",
