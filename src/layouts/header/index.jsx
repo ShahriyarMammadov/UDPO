@@ -87,11 +87,11 @@ const Header = () => {
             Üzvlər
           </NavLink>
           <NavLink
-            to={"/haqqimizda/fealiyyet"}
+            to={"/layihe/cariLayiheler"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Fəaliyyətlər
+            Layihələr
           </NavLink>
         </>
       ),
@@ -385,11 +385,11 @@ const Header = () => {
                 <NavLink to={"/haqqimizda/bizkimik"} title="bizkimik">
                   <div className="text">BİZ KİMİK</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/members"} title="members">
+                <NavLink to={"/haqqimizda/members"} title="üzvlər">
                   <div className="text">ÜZVLƏR</div>
                 </NavLink>
-                <NavLink to={"/haqqimizda/terminler"} title="Visitor Analytics">
-                  <div className="text">FƏALİYYƏTLƏR</div>
+                <NavLink to={"/layihe/carilayiheler"} title="cari layihələr">
+                  <div className="text">LAYİHƏLƏR</div>
                 </NavLink>
               </div>
             </div>
