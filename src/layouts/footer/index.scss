@@ -107,6 +107,17 @@ footer {
 
         .contact_social {
 
+          a {
+            color: white;
+            transition: all 0.5s;
+            line-height: 25px;
+            letter-spacing: 1px;
+
+            &:hover {
+              color: #0672aa;
+            }
+          }
+
           .contact {
             color: #fff;
             font-size: 13px;
@@ -126,7 +137,7 @@ footer {
               justify-content: space-between;
 
               // padding: 0;
-              li {
+              a {
                 cursor: pointer;
                 width: 40px;
                 height: 40px;

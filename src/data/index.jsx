@@ -35,8 +35,8 @@ export const xidmetlerData = [
     url: "/xidmetler/muavinetveteqaud",
   },
   {
-    name: "Əmək Pensiyaları",
-    icon: <i className="fa-regular fa-credit-card"></i>,
-    url: "/elillik/emekpensiyalari",
+    name: "Sosial Xidmət Müəssisələri",
+    icon: <i className="fa-solid fa-house-chimney-medical"></i>,
+    url: "/xidmetler/sosialxidmetmuessiseleri",
   },
 ];

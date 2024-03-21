@@ -87,7 +87,7 @@ const Header = () => {
             Üzvlər
           </NavLink>
           <NavLink
-            to={"/layihe/cariLayiheler"}
+            to={"/layihe/layiheler"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
@@ -135,6 +135,14 @@ const Header = () => {
           </NavLink>
           <NavLink
             style={{ display: "block", marginTop: "10px" }}
+            to={"/xidmetler/MuavinatveTeqaudlerinTeyinOlunmasi"}
+            title="SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ"
+            onClick={onClose}
+          >
+            Müavinət və Təqaüdlərin təyin olunması
+          </NavLink>
+          <NavLink
+            style={{ display: "block", marginTop: "10px" }}
             to={"/xidmetler/sosialxidmetmuessiseleri"}
             title="SOSİAL XİDMƏT MÜƏSSİSƏLƏRİ"
             onClick={onClose}
@@ -177,35 +185,29 @@ const Header = () => {
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Əlilliyin Təyin Olunmasə
-          </NavLink>
-          <NavLink
-            to={"/elillik/emekpensiyalari"}
-            style={{ display: "block", marginTop: "10px" }}
-            onClick={onClose}
-          >
-            Əmək Pensiyaları
+            Əlilliyin Təyin Olunması
           </NavLink>
           <NavLink
             to={"/elillik/beynelxalqgunler"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Sosial Müavinət
+            Beynəlxalq günlər
           </NavLink>
           <NavLink
             to={"/elillik/sosialmuavinet"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Tibbi Sosial Ekspert Mərkəzi
+            Sosial Müavinət
           </NavLink>
+
           <NavLink
             to={"/elillik/dsmfseherverayonsobeleri"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Sosial Müavinət Alanların Siyahısı
+            DSMF-ın şəhər və rayon şöbələri
           </NavLink>
         </>
       ),
@@ -278,13 +280,6 @@ const Header = () => {
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
-            Video Qalereya
-          </NavLink>
-          <NavLink
-            to={"/"}
-            style={{ display: "block", marginTop: "10px" }}
-            onClick={onClose}
-          >
             Foto Qalereya
           </NavLink>
         </>
@@ -345,18 +340,21 @@ const Header = () => {
               </a>
               <div className="social_bar">
                 <ul>
-                  <li>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UC8rOR8zkmYtnFlcBR3ZQCMA/videos"
+                    target="_blank"
+                  >
                     <i class="fa-brands fa-youtube"></i>
-                  </li>
+                  </a>
                 </ul>
               </div>
               <i className="fa-solid fa-magnifying-glass"></i>
@@ -388,7 +386,7 @@ const Header = () => {
                 <NavLink to={"/haqqimizda/members"} title="üzvlər">
                   <div className="text">ÜZVLƏR</div>
                 </NavLink>
-                <NavLink to={"/layihe/carilayiheler"} title="cari layihələr">
+                <NavLink to={"/layihe/layiheler"} title="cari layihələr">
                   <div className="text">LAYİHƏLƏR</div>
                 </NavLink>
               </div>

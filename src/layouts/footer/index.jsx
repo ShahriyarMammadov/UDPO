@@ -10,31 +10,31 @@ const Footer = () => {
         <div className="footer_top">
           <nav className="container">
             <div className="logo_menu">
-              <Link>
+              <Link to={"/"}>
                 <img src={logo} alt="UDPO" />
               </Link>
 
               <div className="menu">
                 <ul className="menu_row">
                   <li>
-                    <Link to="/about"> Haqqımızda</Link>
+                    <Link to="/haqqimizda/bizkimik">Haqqımızda</Link>
                   </li>
                   <li>
-                    <Link to="/disability"> Əlillik</Link>
+                    <Link to="/elillik/umumimelumat">Əlillik</Link>
                   </li>
                   <li>
-                    <Link to="/news"> Xəbərlər</Link>
+                    <Link to="/xeberler">Xəbərlər</Link>
                   </li>
                 </ul>
                 <ul className="menu_row">
                   <li>
-                    <Link to="/partners"> Tərəfdaşlar</Link>
+                    <Link to="/haqqimizda/members">Tərəfdaşlar</Link>
                   </li>
                   <li>
-                    <Link to="/contests"> Müsabiqələr</Link>
+                    <Link to="/xidmetler">Xidmətlər</Link>
                   </li>
                   <li>
-                    <Link to="/competitions"> Müsahibələr</Link>
+                    <Link to="/layihe/layiheler">Layihələr</Link>
                   </li>
                 </ul>
               </div>
@@ -46,28 +46,32 @@ const Footer = () => {
                   Ünvan: AZ1138, Bakı şəhəri, Yasamal rayonu, <br /> Əhməd Cavad
                   küçəsi 7a
                 </p>
-                <p>
-                  Telefon: (+994 12) 434 48 36; <br /> Mobil: (+994 50) 371 03
-                  02
-                </p>
+                <a href="tel:+994124344836">Telefon: (+994 12) 434 48 36</a>
+                <br />
+                <a href="tel:+994503710302">Mobil: (+994 50) 371 03 02</a>
                 <p>Tel/Faks: (+994 12) 434 93 29</p>
-                <p>Email: union-dpo@baku.az ; davudrehimli@gmail.com</p>
+                <a href="mailto:davudrehimli@gmail.com">
+                  Email: union-dpo@baku.az; davudrehimli@gmail.com
+                </a>
               </div>
 
               <div className="social_bar">
                 <ul>
-                  <li>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i className="fa-brands fa-facebook-f"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i className="fa-brands fa-instagram"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a href="https://www.facebook.com/udpo.az" target="_blank">
                     <i className="fa-brands fa-linkedin-in"></i>
-                  </li>
-                  <li>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UC8rOR8zkmYtnFlcBR3ZQCMA/videos"
+                    target="_blank"
+                  >
                     <i className="fa-brands fa-youtube"></i>
-                  </li>
+                  </a>
                 </ul>
               </div>
             </div>

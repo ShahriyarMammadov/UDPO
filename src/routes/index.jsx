@@ -27,6 +27,7 @@ import QhtQanunPage from "../pages/QHT/Qanun";
 import QhtTesisSenedleriPage from "../pages/QHT/TesisSenedleri";
 import BitmisLayihelerPage from "../pages/LAYIHELER/BitmisLayiheler";
 import CariLayihelerPage from "../pages/LAYIHELER/CariLayiheler";
+import LayihelerPage from "../pages/LAYIHELER/layiheler";
 
 const ROUTES = [
   {
@@ -118,8 +119,16 @@ const ROUTES = [
         element: <SeherVeRayonSobeleri />,
       },
       {
+        path: "elillik/umumimelumat",
+        element: <UmumiMelumat />,
+      },
+      {
         path: "elillik/emekpensiyalari",
         element: <EmekPensiyalari />,
+      },
+      {
+        path: "layihe/layiheler",
+        element: <LayihelerPage />,
       },
       {
         path: "layihe/bitmislayiheler",

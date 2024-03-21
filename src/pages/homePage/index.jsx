@@ -94,15 +94,18 @@ const HomePage = () => {
               <i className="fa-solid fa-stethoscope"></i>
               <div className="serviceName">Reabilitasiya Avadanlıqları</div>
             </Link>
-            <Link to={"/xidmetler/muavinetveteqaud"} className="card pad">
+            <Link
+              to={"/xidmetler/MuavinatveTeqaudlerinTeyinOlunmasi"}
+              className="card pad"
+            >
               <i className="fa-regular fa-handshake"></i>
               <div className="serviceName">
                 Müavinət və təqaüdlərin təyin olunması
               </div>
             </Link>
-            <Link to={"/elillik/emekpensiyalari"} className="card">
-              <i className="fa-regular fa-credit-card"></i>
-              <div className="serviceName">Əmək Pensiyaları</div>
+            <Link to={"/xidmetler/sosialxidmetmuessiseleri"} className="card">
+              <i className="fa-solid fa-house-chimney-medical"></i>
+              <div className="serviceName">Sosial Xidmət Müəssisələri</div>
             </Link>
           </div>
         </div>
