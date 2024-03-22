@@ -24,10 +24,11 @@ import QonaqKitabi from "../pages/qonaqKitabi";
 import XidmetlerPage from "../pages/xidmetlerPages";
 import MuavinatveTeqaudlerinTeyinOlunmasiPage from "../pages/xidmetlerPages/MuavinatVeTeqaudlerinTeyinOlunmasi";
 import QhtQanunPage from "../pages/QHT/Qanun";
-import QhtTesisSenedleriPage from "../pages/QHT/TesisSenedleri";
 import BitmisLayihelerPage from "../pages/LAYIHELER/BitmisLayiheler";
 import CariLayihelerPage from "../pages/LAYIHELER/CariLayiheler";
 import LayihelerPage from "../pages/LAYIHELER/layiheler";
+import KoalisiyalarPage from "../pages/QHT/Koalisiyalar";
+import IctimaiSuralarPage from "../pages/QHT/IctimaiSuralar";
 
 const ROUTES = [
   {
@@ -99,8 +100,12 @@ const ROUTES = [
         element: <QhtQanunPage />,
       },
       {
-        path: "qht/tesissenedleri",
-        element: <QhtTesisSenedleriPage />,
+        path: "qht/koalisiyalar",
+        element: <KoalisiyalarPage />,
+      },
+      {
+        path: "qht/ictimaisuralar",
+        element: <IctimaiSuralarPage />,
       },
       {
         path: "elillik/elilliyinteyinolunmasi",

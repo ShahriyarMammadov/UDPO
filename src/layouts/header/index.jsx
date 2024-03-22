@@ -225,25 +225,11 @@ const Header = () => {
             Qanun QHT
           </NavLink>
           <NavLink
-            to={"/qht/tesissenedleri"}
-            style={{ display: "block", marginTop: "10px" }}
-            onClick={onClose}
-          >
-            Təsis Sənədləri
-          </NavLink>
-          <NavLink
             to={"/qht/koalisiyalar"}
             style={{ display: "block", marginTop: "10px" }}
             onClick={onClose}
           >
             Koalisiyalar
-          </NavLink>
-          <NavLink
-            to={"/qht/xeberler"}
-            style={{ display: "block", marginTop: "10px" }}
-            onClick={onClose}
-          >
-            QHT Xəbərlər
           </NavLink>
           <NavLink
             to={"/qht/ictimaisuralar"}
@@ -445,7 +431,7 @@ const Header = () => {
             </div>
 
             <div className="dropdown">
-              <NavLink to={"/elillik"} className="parent">
+              <NavLink to={"/elillik/umumimelumat"} className="parent">
                 ƏLİLLİK <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">
@@ -484,14 +470,8 @@ const Header = () => {
                 <NavLink to={"/qht/qanun"} title="Zəmanət">
                   <div className="text">QANUN {`QHT`}</div>
                 </NavLink>
-                <NavLink to={"/qht/tesissenedleri"} title="Terminlər">
-                  <div className="text">TƏSİS SƏNƏDLƏRİ</div>
-                </NavLink>
                 <NavLink to={"/qht/koalisiyalar"} title="Visitor Analytics">
                   <div className="text">KOALİSİYALAR</div>
-                </NavLink>
-                <NavLink to={"/qht/xeberler"} title="Visitor Analytics">
-                  <div className="text">QHT XƏBƏRLƏR</div>
                 </NavLink>
                 <NavLink to={"/qht/ictimaisuralar"} title="Visitor Analytics">
                   <div className="text">İCTİMAİ ŞURALAR</div>
