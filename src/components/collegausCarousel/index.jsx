@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.scss";
-import GİN from "../../assets/images/collegaus/GİN.png";
+import gin from "../../assets/images/collegaus/gin.png";
 import ecosoc from "../../assets/images/collegaus/ecosoc.png";
 import insanhuquqlari from "../../assets/images/collegaus/unhr.png";
 import MN from "../../assets/images/collegaus/MN.png";
@@ -24,7 +24,7 @@ const ColleaguesComponent = () => {
 
   const items = [
     <div className="item" data-value="1">
-      <Image src={GİN} alt="gencler ve idman nazirliyi" />
+      <Image src={gin} alt="gencler ve idman nazirliyi" />
     </div>,
     <div className="item" data-value="2">
       <Image src={ombudsman} alt="ombudsman" />
