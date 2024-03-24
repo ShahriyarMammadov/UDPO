@@ -23,7 +23,7 @@ const HomePage = () => {
       const selectedNewsData = await axios.get(
         "https://udpobackend-production.up.railway.app/selectedNews/getAllSelectedNews"
       );
-      setSelectedNewsData(selectedNewsData?.data?.data);
+      setSelectedNewsData(selectedNewsData?.data?.data?.reverse());
 
       const newsData = await axios.get(
         "https://udpobackend-production.up.railway.app/news/latest20news"
