@@ -181,10 +181,10 @@ const HomePage = () => {
       <div style={{}} className="container">
         <a href="https://info.flagcounter.com/DaV8">
           <img
-            style={{ width: "350px" }}
+            style={{ width: "450px" }}
             src="https://s01.flagcounter.com/countxl/DaV8/bg_FFFFFF/txt_000000/border_1D2ECC/columns_4/maxflags_20/viewers_Ziyarerciler/labels_1/pageviews_1/flags_0/percent_0/"
             alt="Flag Counter"
-            border="0"
+            border="6"
           />
         </a>
       </div>

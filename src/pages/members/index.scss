@@ -6,17 +6,23 @@
     color: #1876c9;
     font-size: 30px;
   }
-  a {
+
+  .members{
     display: flex;
-    align-items: center;
-    margin-top: 60px;
-    img {
-      width: 110px;
-    }
-    p {
-      margin-left: 18px;
-      color: #1876c9;
-      font-size: 16px;
+   justify-content: space-around;
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      img {
+        width: 110px;
+      }
+      p {
+        margin-left: 18px;
+        color: #1876c9;
+        font-size: 16px;
+      }
     }
   }
 }

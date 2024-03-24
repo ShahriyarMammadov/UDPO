@@ -14,6 +14,9 @@ const Members = () => {
     <div id="members">
       <div className="container">
         <h1>  ÜZV TƏŞKİLATLAR</h1>
+
+        <div className="members">
+        <div>
         <div>
           <Link>
             <img src={akc} alt="akc" className="membersLogo" />
@@ -31,7 +34,7 @@ const Members = () => {
             <img src={əqc} alt="akc" className="membersLogo" />
             <p> "Əlil Qadınlar" Cəmiyyəti</p>
           </Link>
-        </div>
+        </div> 
         <div>
           <Link>
             <img src={adl} alt="akc" className="membersLogo" />
@@ -56,6 +59,54 @@ const Members = () => {
             <p> Azərbaycan Əlillər Cəmiyyəti</p>
           </Link>
         </div>
+        </div>
+
+        <div>
+        <div>
+          <Link>
+            <img src={akc} alt="akc" className="membersLogo" />
+            <p>Azərbaycan Karlar Cəmiyyəti</p>
+          </Link>
+        </div>
+        <div>
+          <Link>
+            <img src={əbəu} alt="akc" className="membersLogo" />
+            <p>Əlillərin Beynəlxalq Əməkdaşlığı Uğurunda</p>
+          </Link>
+        </div>
+        <div>
+          <Link>
+            <img src={əqc} alt="akc" className="membersLogo" />
+            <p> "Əlil Qadınlar" Cəmiyyəti</p>
+          </Link>
+        </div> 
+        <div>
+          <Link>
+            <img src={adl} alt="akc" className="membersLogo" />
+            <p> Azərbaycan Diabet Liqası </p>
+          </Link>
+        </div>
+        <div>
+          <Link>
+            <img src={agəc} alt="akc" className="membersLogo" />
+            <p> Azərbaycan Gözdən Əlillər Cəmiyyəti İctimai Birliyi </p>
+          </Link>
+        </div>
+        <div>
+          <Link>
+            <img src={hx} alt="akc" className="membersLogo" />
+            <p> Hemofiliyalı Xəstələrin Respublika Assosiasiyası </p>
+          </Link>
+        </div>
+        <div>
+          <Link>
+            <img src={aəc} alt="akc" className="membersLogo" />
+            <p> Azərbaycan Əlillər Cəmiyyəti</p>
+          </Link>
+        </div>
+        </div>
+        </div>
+   
         
       </div>
     </div>
