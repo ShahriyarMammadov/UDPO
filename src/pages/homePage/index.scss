@@ -205,16 +205,59 @@ main {
         }
     }
 
-    .visitor{
-        img{
+    .visitor {
+        padding: 0 10px;
+
+        img {
             width: 450px;
         }
-        @media only screen and (max-width: 450px) {
+
+        @media only screen and (max-width: 500px) {
             display: flex;
             justify-content: center;
-            img{
-                width: 400px;
+
+            img {
+                width: 420px;
             }
         }
+
+        @media only screen and (max-width: 450px) {
+
+            img {
+                width: 350px;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    li {
+        background-color: #1876c9;
+        height: 15px !important;
+        width: 30px !important;
+
+        button {
+            height: 15px !important;
+        }
+
+        @media only screen and (max-width: 700px) {
+            height: 3px !important;
+
+            button {
+                height: 3px !important;
+            }
+        }
+
+    }
+
+    .slick-active {
+        background-color: #422800 !important;
     }
 }

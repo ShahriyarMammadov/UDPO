@@ -168,11 +168,13 @@ const HomePage = () => {
         <RequestComponent />
       </section>
 
-      <div style={{  marginTop: "20px", marginBottom: "50px"}} className="container">
-        <a href="https://info.flagcounter.com/DaV8" className="visitor">
+      <div
+        style={{ marginTop: "20px", marginBottom: "50px" }}
+        className="container"
+      >
+        <a href="http://s11.flagcounter.com/more/rO8" className="visitor">
           <img
-          
-            src="https://s01.flagcounter.com/countxl/DaV8/bg_FFFFFF/txt_000000/border_1D2ECC/columns_4/maxflags_20/viewers_Ziyarerciler/labels_1/pageviews_1/flags_0/percent_0/"
+            src="https://s11.flagcounter.com/count2/rO8/bg_FFFFFF/txt_000000/border_1B20CC/columns_4/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
             alt="Flag Counter"
             border="6"
           />
@@ -188,8 +190,6 @@ const HomePage = () => {
           </a>
         </div>
       </section>
-
-     
     </main>
   );
 };
