@@ -320,9 +320,9 @@ const Header = () => {
           <i class="fa-solid fa-bars" onClick={showDrawer}></i>
           <div className="right">
             <div className="tel">
-              <a href="tel:+994124344836">
+              <a href="tel:+994124349329">
                 <i className="fa-solid fa-phone"></i>
-                (+994 12) 434 48 36
+                (+994 12) 434 93 29
               </a>
               <div className="social_bar">
                 <ul>
@@ -362,7 +362,13 @@ const Header = () => {
         <div className="headerBottom">
           <nav className="container">
             <div className="dropdown">
-              <NavLink to={"/haqqimizda/bizkimik"} className="parent first">
+              <Link to={"/"} className="parent">
+                BAŞ SƏHİFƏ
+              </Link>
+            </div>
+
+            <div className="dropdown">
+              <NavLink to={"/haqqimizda/bizkimik"} className="parent ">
                 HAQQIMIZDA <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
               <div className="dropdown-content">

@@ -42,16 +42,13 @@ const Footer = () => {
 
             <div className="contact_social">
               <div className="contact">
-                <p>
-                  Ünvan: AZ1138, Bakı şəhəri, Yasamal rayonu, <br /> Əhməd Cavad
-                  küçəsi 7a
-                </p>
-                <a href="tel:+994124344836">Telefon: (+994 12) 434 48 36</a>
+                <p>Ünvan: AZ1138, Bakı şəhəri, M.C. Məmmədzadə 166D</p>
+                <a href="tel:+994124349329">Telefon: (+994 12) 434 93 29</a>
                 <br />
                 <a href="tel:+994503710302">Mobil: (+994 50) 371 03 02</a>
                 <p>Tel/Faks: (+994 12) 434 93 29</p>
                 <a href="mailto:davudrehimli@gmail.com">
-                  Email: union-dpo@baku.az; davudrehimli@gmail.com
+                  Email: union-dpo@baku.az; info@udpo.az; davudrehimli@gmail.com
                 </a>
               </div>
 

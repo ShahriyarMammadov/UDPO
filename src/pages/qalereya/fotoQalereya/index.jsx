@@ -25,6 +25,8 @@ const PhotoGallery = () => {
     }
   };
 
+  console.log(allData);
+
   return (
     <div id="photoGallery">
       <div className="grid-container container">
@@ -64,9 +66,13 @@ const PhotoGallery = () => {
                       padding: "6px 10px",
                     }}
                   >
-                    {e?.name?.length > 86 ? e?.name?.slice(0, 87) : e?.name}
+                    {e?.name?.length > 86 ? e?.name?.slice(0, 90) : e?.name}
                   </Text>
                 </div>
+
+                {/* <div>
+                  <p>{e?.date}</p>
+                </div> */}
               </>
             );
           })
