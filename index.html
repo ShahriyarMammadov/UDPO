@@ -18,39 +18,39 @@
   <script type="module" src="/src/main.jsx"></script>
 
   <script>
+
     window.interdeal = {
-      "sitekey": "8c187a0b239e24e52a8d83e9d7438cc9",
-      "Position": "Left",
-      "Menulang": "EN",
+      "sitekey": "591d303911b395d6972e9681d8432172",
+      "Position": "left",
       "domains": {
         "js": "https://cdn.equalweb.com/",
         "acc": "https://access.equalweb.com/"
       },
+      "Menulang": "EN",
       "btnStyle": {
         "vPosition": [
           "80%",
-          null
+          "20%"
         ],
         "scale": [
-          "0.8",
-          "0.8"
+          "0.5",
+          "0.5"
         ],
         "color": {
-          "main": "#1876c9",
-          "second": ""
+          "main": "#1c4bb6",
+          "second": "#ffffff"
         },
         "icon": {
-          "type": 7,
-          "shape": "semicircle",
-          "outline": false
+          "type": 5,
+          "shape": "semicircle"
         }
       }
     };
     (function (doc, head, body) {
       var coreCall = doc.createElement('script');
-      coreCall.src = interdeal.domains.js + 'core/4.5.8/accessibility.js';
+      coreCall.src = interdeal.domains.js + 'core/4.6.11/accessibility.js';
       coreCall.defer = true;
-      coreCall.integrity = 'sha512-edRZXolhkUWHM/uu0oiEu0tD39SPOhnl5a2KM+62YWIfb4M5oSMjvyl2NPXtGq8McfJl88bKtaxljjViGqQXtA==';
+      coreCall.integrity = 'sha512-SVffVpbO/SKg8zoE3NWu0Ct32mTRDO5b27N4qA5C+e6ctRHVwAk158RdBWMlaD2UuAtQUxeRwY71joiCkwsFVA==';
       coreCall.crossOrigin = 'anonymous';
       coreCall.setAttribute('data-cfasync', true);
       body ? body.appendChild(coreCall) : head.appendChild(coreCall);
